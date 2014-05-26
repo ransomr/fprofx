@@ -1,0 +1,19 @@
+#!/usr/bin/env escript
+
+profile(Mod) ->
+    {ok, _} = Mod:apply(
+                httpc, request, ["http://www.talko.com"], 
+                [{procs, processes() -- [whereis(list_to_atom(atom_to_list(Mod) ++ "_server"))]}]),
+    ok = Mod:profile(),
+    ok = Mod:analyse([{dest, atom_to_list(Mod) ++ ".analysis"}]).
+
+main([Mod]) ->
+    case Mod of
+        "fprof" -> 
+            ok;
+        "fprofx" ->
+            compile:file("../src/fprofx.erl")
+    end,
+    inets:start(),
+    {ok, _} = httpc:request("http://www.talko.com"),
+    profile(list_to_atom(Mod)).

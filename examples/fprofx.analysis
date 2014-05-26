@@ -1,0 +1,1289 @@
+%% Analysis results:
+{  analysis_options,
+ [{callers, true},
+  {sort, acc},
+  {totals, false},
+  {details, true}]}.
+
+%                                               CNT       ACC       OWN      SUS      GC         
+[{ totals,                                     2265,  400.842,   5.819,6811.083,    1.154}].  %%%
+
+
+%                                               CNT       ACC       OWN      SUS      GC         
+[{ "<0.47.0>",                                 1756,undefined,   4.647,undefined,undefined}].   %%
+
+{[{undefined,                                     0,  399.930,   0.000, 395.283,    0.030}],     
+ { {proc_lib,init_p_do_apply,3},                  0,  399.930,   0.000, 395.283,    0.030},     %
+ [{{gen_server,loop,6},                           0,  399.930,   0.001, 395.283,    0.030}]}.    
+
+{[{{proc_lib,init_p_do_apply,3},                  0,  399.930,   0.001, 395.283,    0.030},      
+  {{gen_server,handle_msg,5},                     1,    0.000,   0.079,   0.000,    0.000},      
+  {{gen_server,handle_common_reply,6},            4,    0.000,   0.058,   0.000,    0.000}],     
+ { {gen_server,loop,6},                           5,  399.930,   0.138, 395.283,    0.030},     %
+ [{{gen_server,decode_msg,8},                     5,  399.929,   0.011, 395.283,    0.030},      
+  {suspend,                                       3,  395.283,   0.000, 395.283,    0.000}]}.    
+
+{[{{gen_server,loop,6},                           5,  399.929,   0.011, 395.283,    0.030}],     
+ { {gen_server,decode_msg,8},                     5,  399.929,   0.011, 395.283,    0.030},     %
+ [{{gen_server,handle_msg,5},                     5,  399.928,   0.014, 395.283,    0.030}]}.    
+
+{[{{gen_server,decode_msg,8},                     5,  399.928,   0.014, 395.283,    0.030}],     
+ { {gen_server,handle_msg,5},                     5,  399.928,   0.014, 395.283,    0.030},     %
+ [{{gen_server,handle_common_reply,6},            4,   27.325,   0.004,  26.419,    0.000},      
+  {{gen_server,dispatch,3},                       4,    3.738,   0.009,   0.000,    0.027},      
+  {{httpc_handler,handle_call,3},                 1,    0.741,   0.018,   0.000,    0.003},      
+  {{gen_server,reply,2},                          1,    0.001,   0.001,   0.000,    0.000},      
+  {{gen_server,loop,6},                           1,    0.000,   0.079,   0.000,    0.000}]}.    
+
+{[{{gen_server,loop,6},                           3,  395.283,   0.000, 395.283,    0.000}],     
+ { suspend,                                       3,  395.283,   0.000, 395.283,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,handle_msg,5},                     4,   27.325,   0.004,  26.419,    0.000}],     
+ { {gen_server,handle_common_reply,6},            4,   27.325,   0.004,  26.419,    0.000},     %
+ [{{gen_server,loop,6},                           4,    0.000,   0.058,   0.000,    0.000}]}.    
+
+{[{{gen_server,handle_msg,5},                     4,    3.738,   0.009,   0.000,    0.027}],     
+ { {gen_server,dispatch,3},                       4,    3.738,   0.009,   0.000,    0.027},     %
+ [{{httpc_handler,handle_info,2},                 4,    3.729,   0.040,   0.000,    0.027}]}.    
+
+{[{{gen_server,dispatch,3},                       4,    3.729,   0.040,   0.000,    0.027}],     
+ { {httpc_handler,handle_info,2},                 4,    3.729,   0.040,   0.000,    0.027},     %
+ [{{httpc_response,parse,1},                      1,    2.826,   0.002,   0.000,    0.027},      
+  {{httpc_handler,handle_http_msg,2},             2,    0.781,   0.011,   0.000,    0.000},      
+  {{httpc_handler,next_body_chunk,1},             2,    0.046,   0.004,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                 12,    0.014,   0.014,   0.000,    0.000},      
+  {{httpc_response,whole_body,1},                 3,    0.014,   0.009,   0.000,    0.000},      
+  {{httpc_handler,stream,3},                      2,    0.006,   0.004,   0.000,    0.000},      
+  {{erlang,setelement,3},                         2,    0.002,   0.002,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_info,2},                 1,    2.826,   0.002,   0.000,    0.027}],     
+ { {httpc_response,parse,1},                      1,    2.826,   0.002,   0.000,    0.027},     %
+ [{{httpc_response,parse_version,5},              1,    2.824,   0.003,   0.000,    0.027}]}.    
+
+{[{{httpc_response,parse,1},                      1,    2.824,   0.003,   0.000,    0.027},      
+  {{httpc_response,parse_version,5},              8,    0.000,   0.014,   0.000,    0.000}],     
+ { {httpc_response,parse_version,5},              9,    2.824,   0.017,   0.000,    0.027},     %
+ [{{httpc_response,parse_status_code,5},          1,    2.802,   0.002,   0.000,    0.027},      
+  {{lists,reverse,1},                             1,    0.005,   0.004,   0.000,    0.000},      
+  {{httpc_response,parse_version,5},              8,    0.000,   0.014,   0.000,    0.000}]}.    
+
+{[{{httpc_response,parse_version,5},              1,    2.802,   0.002,   0.000,    0.027},      
+  {{httpc_response,parse_status_code,5},          3,    0.000,   0.007,   0.000,    0.000}],     
+ { {httpc_response,parse_status_code,5},          4,    2.802,   0.009,   0.000,    0.027},     %
+ [{{httpc_response,parse_reason_phrase,5},        1,    2.788,   0.002,   0.000,    0.027},      
+  {{lists,reverse,1},                             1,    0.003,   0.002,   0.000,    0.000},      
+  {{erlang,list_to_integer,1},                    1,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_response,parse_status_code,5},          3,    0.000,   0.007,   0.000,    0.000}]}.    
+
+{[{{httpc_response,parse_status_code,5},          1,    2.788,   0.002,   0.000,    0.027},      
+  {{httpc_response,parse_reason_phrase,5},        2,    0.000,   0.005,   0.000,    0.000}],     
+ { {httpc_response,parse_reason_phrase,5},        3,    2.788,   0.007,   0.000,    0.027},     %
+ [{{httpc_response,parse_headers,6},              1,    2.780,   0.001,   0.000,    0.027},      
+  {{lists,reverse,1},                             1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_response,parse_reason_phrase,5},        2,    0.000,   0.005,   0.000,    0.000}]}.    
+
+{[{{httpc_response,parse_reason_phrase,5},        1,    2.780,   0.001,   0.000,    0.027},      
+  {{httpc_response,parse_headers,6},            288,    0.000,   0.993,   0.000,    0.000}],     
+ { {httpc_response,parse_headers,6},            289,    2.780,   0.994,   0.000,    0.027},     %
+ [{{http_response,headers,2},                     1,    1.694,   0.007,   0.000,    0.001},      
+  {{lists,foldl,3},                               1,    0.034,   0.002,   0.000,    0.000},      
+  {{lists,reverse,1},                             9,    0.031,   0.021,   0.000,    0.000},      
+  {garbage_collect,                               2,    0.026,   0.026,   0.000,    0.026},      
+  {{erlang,list_to_tuple,1},                      1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_response,parse_headers,6},            288,    0.000,   0.993,   0.000,    0.000}]}.    
+
+{[{{httpc_response,parse_headers,6},              1,    1.694,   0.007,   0.000,    0.001},      
+  {{http_response,headers,2},                     8,    0.000,   0.043,   0.000,    0.000}],     
+ { {http_response,headers,2},                     9,    1.694,   0.050,   0.000,    0.001},     %
+ [{{string,strip,1},                             16,    0.693,   0.016,   0.000,    0.001},      
+  {{http_util,to_lower,1},                        8,    0.598,   0.008,   0.000,    0.000},      
+  {{lists,splitwith,2},                           8,    0.329,   0.008,   0.000,    0.000},      
+  {{http_response,headers,3},                     8,    0.024,   0.016,   0.000,    0.000},      
+  {{http_response,headers,2},                     8,    0.000,   0.043,   0.000,    0.000}]}.    
+
+{[{{http_response,header_list,1},                 1,    0.484,   0.004,   0.000,    0.000},      
+  {{http_request,http_headers,1},                 1,    0.414,   0.002,   0.000,    0.000},      
+  {{httpc_response,parse_headers,6},              1,    0.034,   0.002,   0.000,    0.000},      
+  {{lists,foldl,3},                              74,    0.000,   0.204,   0.000,    0.000}],     
+ { {lists,foldl,3},                              77,    0.932,   0.212,   0.000,    0.000},     %
+ [{{http_response,'-header_list/1-fun-0-',3},    28,    0.383,   0.114,   0.000,    0.000},      
+  {{http_request,'-http_headers/1-fun-0-',3},    38,    0.329,   0.090,   0.000,    0.000},      
+  {{httpc_response,'-parse_headers/6-fun-0-',2},   8,    0.008,   0.008,   0.000,    0.000},      
+  {{lists,foldl,3},                              74,    0.000,   0.204,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_info,2},                 2,    0.781,   0.011,   0.000,    0.000}],     
+ { {httpc_handler,handle_http_msg,2},             2,    0.781,   0.011,   0.000,    0.000},     %
+ [{{httpc_handler,handle_response,1},             1,    0.708,   0.008,   0.000,    0.000},      
+  {{httpc_handler,handle_http_body,2},            1,    0.052,   0.008,   0.000,    0.000},      
+  {{httpc_handler,stream,3},                      1,    0.003,   0.002,   0.000,    0.000},      
+  {{httpc_handler,start_stream,3},                1,    0.003,   0.002,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  2,    0.002,   0.002,   0.000,    0.000},      
+  {{erlang,setelement,3},                         2,    0.002,   0.002,   0.000,    0.000}]}.    
+
+{[{{gen_server,handle_msg,5},                     1,    0.741,   0.018,   0.000,    0.003}],     
+ { {httpc_handler,handle_call,3},                 1,    0.741,   0.018,   0.000,    0.003},     %
+ [{{httpc_request,send,3},                        1,    0.693,   0.001,   0.000,    0.003},      
+  {{httpc_handler,insert_session,2},              1,    0.015,   0.001,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc_handler,init_wait_for_response_state,2},   1,    0.003,   0.002,   0.000,    0.000},      
+  {{httpc_handler,cancel_timer,2},                1,    0.003,   0.002,   0.000,    0.000},      
+  {{erlang,setelement,3},                         3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc_request,is_client_closing,1},           1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,handle_proxy,2},                1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,activate_request_timeout,1},    1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_http_msg,2},             1,    0.708,   0.008,   0.000,    0.000}],     
+ { {httpc_handler,handle_response,1},             1,    0.708,   0.008,   0.000,    0.000},     %
+ [{{httpc_response,result,2},                     1,    0.517,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_queue,2},                1,    0.131,   0.001,   0.000,    0.000},      
+  {{httpc_handler,maybe_send_answer,3},           1,    0.045,   0.001,   0.000,    0.000},      
+  {{httpc_handler,end_stream,2},                  1,    0.004,   0.003,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_cookies,4},              1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{http_response,headers,2},                    16,    0.693,   0.016,   0.000,    0.001}],     
+ { {string,strip,1},                             16,    0.693,   0.016,   0.000,    0.001},     %
+ [{{string,strip,2},                             16,    0.677,   0.035,   0.000,    0.001}]}.    
+
+{[{{httpc_handler,handle_call,3},                 1,    0.693,   0.001,   0.000,    0.003}],     
+ { {httpc_request,send,3},                        1,    0.693,   0.001,   0.000,    0.003},     %
+ [{{httpc_request,send,4},                        1,    0.692,   0.008,   0.000,    0.003}]}.    
+
+{[{{httpc_request,send,3},                        1,    0.692,   0.008,   0.000,    0.003}],     
+ { {httpc_request,send,4},                        1,    0.692,   0.008,   0.000,    0.003},     %
+ [{{http_request,http_headers,1},                 1,    0.575,   0.003,   0.000,    0.000},      
+  {{httpc_request,do_send_body,7},                1,    0.102,   0.006,   0.000,    0.000},      
+  {garbage_collect,                               1,    0.003,   0.003,   0.000,    0.003},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_request,post_data,4},                   1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_request,handle_user_info,2},            1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,'++',2},                               1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{string,strip,1},                             16,    0.677,   0.035,   0.000,    0.001}],     
+ { {string,strip,2},                             16,    0.677,   0.035,   0.000,    0.001},     %
+ [{{string,strip_right,2},                       16,    0.618,   0.159,   0.000,    0.001},      
+  {{string,strip_left,2},                        16,    0.024,   0.016,   0.000,    0.000}]}.    
+
+{[{{string,strip,2},                             16,    0.618,   0.159,   0.000,    0.001},      
+  {{string,strip_right,2},                      272,    0.000,   0.458,   0.000,    0.000}],     
+ { {string,strip_right,2},                      288,    0.618,   0.617,   0.000,    0.001},     %
+ [{garbage_collect,                               1,    0.001,   0.001,   0.000,    0.001},      
+  {{string,strip_right,2},                      272,    0.000,   0.458,   0.000,    0.000}]}.    
+
+{[{{http_response,headers,2},                     8,    0.598,   0.008,   0.000,    0.000}],     
+ { {http_util,to_lower,1},                        8,    0.598,   0.008,   0.000,    0.000},     %
+ [{{string,to_lower,1},                           8,    0.590,   0.008,   0.000,    0.000}]}.    
+
+{[{{http_util,to_lower,1},                        8,    0.590,   0.008,   0.000,    0.000}],     
+ { {string,to_lower,1},                           8,    0.590,   0.008,   0.000,    0.000},     %
+ [{{string,'-to_lower/1-lc$^0/1-0-',1},           8,    0.582,   0.369,   0.000,    0.000}]}.    
+
+{[{{string,to_lower,1},                           8,    0.582,   0.369,   0.000,    0.000},      
+  {{string,'-to_lower/1-lc$^0/1-0-',1},          79,    0.000,   0.133,   0.000,    0.000}],     
+ { {string,'-to_lower/1-lc$^0/1-0-',1},          87,    0.582,   0.502,   0.000,    0.000},     %
+ [{{string,to_lower_char,1},                     79,    0.080,   0.080,   0.000,    0.000},      
+  {{string,'-to_lower/1-lc$^0/1-0-',1},          79,    0.000,   0.133,   0.000,    0.000}]}.    
+
+{[{{httpc_request,send,4},                        1,    0.575,   0.003,   0.000,    0.000}],     
+ { {http_request,http_headers,1},                 1,    0.575,   0.003,   0.000,    0.000},     %
+ [{{lists,foldl,3},                               1,    0.414,   0.002,   0.000,    0.000},      
+  {{lists,flatten,1},                             1,    0.157,   0.001,   0.000,    0.000},      
+  {{http_request,headers_other,2},                1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_response,1},             1,    0.517,   0.002,   0.000,    0.000}],     
+ { {httpc_response,result,2},                     1,    0.517,   0.002,   0.000,    0.000},     %
+ [{{httpc_response,transparent,2},                1,    0.515,   0.003,   0.000,    0.000}]}.    
+
+{[{{httpc_response,result,2},                     1,    0.515,   0.003,   0.000,    0.000}],     
+ { {httpc_response,transparent,2},                1,    0.515,   0.003,   0.000,    0.000},     %
+ [{{httpc_response,format_response,1},            1,    0.512,   0.007,   0.000,    0.000}]}.    
+
+{[{{httpc_response,transparent,2},                1,    0.512,   0.007,   0.000,    0.000}],     
+ { {httpc_response,format_response,1},            1,    0.512,   0.007,   0.000,    0.000},     %
+ [{{http_response,header_list,1},                 1,    0.504,   0.015,   0.000,    0.000},      
+  {{erlang,list_to_integer,1},                    1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_response,format_response,1},            1,    0.504,   0.015,   0.000,    0.000}],     
+ { {http_response,header_list,1},                 1,    0.504,   0.015,   0.000,    0.000},     %
+ [{{lists,foldl,3},                               1,    0.484,   0.004,   0.000,    0.000},      
+  {{lists,reverse,1},                             1,    0.004,   0.003,   0.000,    0.000},      
+  {{erlang,'++',2},                               1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{lists,foldl,3},                              28,    0.383,   0.114,   0.000,    0.000}],     
+ { {http_response,'-header_list/1-fun-0-',3},    28,    0.383,   0.114,   0.000,    0.000},     %
+ [{{http_response,key_value_tuple,2},            28,    0.269,   0.160,   0.000,    0.000}]}.    
+
+{[{{http_response,headers,2},                     8,    0.329,   0.008,   0.000,    0.000}],     
+ { {lists,splitwith,2},                           8,    0.329,   0.008,   0.000,    0.000},     %
+ [{{lists,splitwith,3},                           8,    0.321,   0.017,   0.000,    0.000}]}.    
+
+{[{{lists,foldl,3},                              38,    0.329,   0.090,   0.000,    0.000}],     
+ { {http_request,'-http_headers/1-fun-0-',3},    38,    0.329,   0.090,   0.000,    0.000},     %
+ [{{http_request,key_value_str,2},               38,    0.239,   0.126,   0.000,    0.000}]}.    
+
+{[{{lists,splitwith,2},                           8,    0.321,   0.017,   0.000,    0.000},      
+  {{lists,splitwith,3},                          79,    0.000,   0.184,   0.000,    0.000}],     
+ { {lists,splitwith,3},                          87,    0.321,   0.201,   0.000,    0.000},     %
+ [{{http_response,'-headers/2-fun-0-',1},        87,    0.088,   0.088,   0.000,    0.000},      
+  {{lists,reverse,1},                             8,    0.032,   0.024,   0.000,    0.000},      
+  {{lists,splitwith,3},                          79,    0.000,   0.184,   0.000,    0.000}]}.    
+
+{[{{http_response,'-header_list/1-fun-0-',3},    28,    0.269,   0.160,   0.000,    0.000},      
+  {{http_response,key_value_tuple,2},            28,    0.000,   0.074,   0.000,    0.000}],     
+ { {http_response,key_value_tuple,2},            56,    0.269,   0.234,   0.000,    0.000},     %
+ [{{erlang,atom_to_list,1},                      28,    0.035,   0.035,   0.000,    0.000},      
+  {{http_response,key_value_tuple,2},            28,    0.000,   0.074,   0.000,    0.000}]}.    
+
+{[{{http_request,'-http_headers/1-fun-0-',3},    38,    0.239,   0.126,   0.000,    0.000},      
+  {{http_request,key_value_str,2},               38,    0.000,   0.047,   0.000,    0.000}],     
+ { {http_request,key_value_str,2},               76,    0.239,   0.173,   0.000,    0.000},     %
+ [{{erlang,atom_to_list,1},                      38,    0.058,   0.058,   0.000,    0.000},      
+  {{erlang,'++',2},                               8,    0.008,   0.008,   0.000,    0.000},      
+  {{http_request,key_value_str,2},               38,    0.000,   0.047,   0.000,    0.000}]}.    
+
+{[{{http_request,http_headers,1},                 1,    0.157,   0.001,   0.000,    0.000}],     
+ { {lists,flatten,1},                             1,    0.157,   0.001,   0.000,    0.000},     %
+ [{{lists,do_flatten,2},                          1,    0.156,   0.002,   0.000,    0.000}]}.    
+
+{[{{lists,flatten,1},                             1,    0.156,   0.002,   0.000,    0.000},      
+  {{lists,do_flatten,2},                         80,    0.000,   0.154,   0.000,    0.000}],     
+ { {lists,do_flatten,2},                         81,    0.156,   0.156,   0.000,    0.000},     %
+ [{{lists,do_flatten,2},                         80,    0.000,   0.154,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_response,1},             1,    0.131,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,handle_queue,2},                1,    0.131,   0.001,   0.000,    0.000},     %
+ [{{httpc_handler,handle_keep_alive_queue,2},     1,    0.130,   0.005,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_queue,2},                1,    0.130,   0.005,   0.000,    0.000}],     
+ { {httpc_handler,handle_keep_alive_queue,2},     1,    0.130,   0.005,   0.000,    0.000},     %
+ [{{httpc_handler,handle_empty_queue,4},          1,    0.122,   0.005,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  2,    0.002,   0.002,   0.000,    0.000},      
+  {{queue,out,1},                                 1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_keep_alive_queue,2},     1,    0.122,   0.005,   0.000,    0.000}],     
+ { {httpc_handler,handle_empty_queue,4},          1,    0.122,   0.005,   0.000,    0.000},     %
+ [{{httpc_handler,activate_queue_timeout,2},      1,    0.054,   0.047,   0.000,    0.000},      
+  {{httpc_handler,activate_once,1},               1,    0.037,   0.001,   0.000,    0.000},      
+  {{httpc_handler,update_session,4},              1,    0.025,   0.003,   0.000,    0.000},      
+  {{erlang,setelement,3},                         1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,next_body_chunk,1},             3,    0.078,   0.003,   0.000,    0.000},      
+  {{httpc_handler,handle_empty_queue,4},          1,    0.037,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,activate_once,1},               4,    0.115,   0.004,   0.000,    0.000},     %
+ [{{http_transport,setopts,3},                    4,    0.111,   0.009,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,activate_once,1},               4,    0.111,   0.009,   0.000,    0.000}],     
+ { {http_transport,setopts,3},                    4,    0.111,   0.009,   0.000,    0.000},     %
+ [{{inet,setopts,2},                              4,    0.098,   0.010,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  4,    0.004,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_request,send,4},                        1,    0.102,   0.006,   0.000,    0.000}],     
+ { {httpc_request,do_send_body,7},                1,    0.102,   0.006,   0.000,    0.000},     %
+ [{{http_transport,send,3},                       1,    0.074,   0.001,   0.000,    0.000},      
+  {{httpc_request,method,1},                      1,    0.018,   0.002,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_request,version,1},                     1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_request,headers,2},                     1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{http_transport,setopts,3},                    4,    0.098,   0.010,   0.000,    0.000}],     
+ { {inet,setopts,2},                              4,    0.098,   0.010,   0.000,    0.000},     %
+ [{{prim_inet,setopts,2},                         4,    0.076,   0.013,   0.000,    0.000},      
+  {{inet,'-setopts/2-lc$^0/1-0-',1},              4,    0.012,   0.008,   0.000,    0.000}]}.    
+
+{[{{http_request,key_value_str,2},               38,    0.058,   0.058,   0.000,    0.000},      
+  {{http_response,key_value_tuple,2},            28,    0.035,   0.035,   0.000,    0.000},      
+  {{httpc_manager,make_db_name,2},                2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_request,method,1},                      1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,atom_to_list,1},                      69,    0.096,   0.096,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{lists,splitwith,3},                          87,    0.088,   0.088,   0.000,    0.000}],     
+ { {http_response,'-headers/2-fun-0-',1},        87,    0.088,   0.088,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_info,2},                 2,    0.046,   0.004,   0.000,    0.000},      
+  {{httpc_handler,handle_http_body,2},            1,    0.038,   0.002,   0.000,    0.000}],     
+ { {httpc_handler,next_body_chunk,1},             3,    0.084,   0.006,   0.000,    0.000},     %
+ [{{httpc_handler,activate_once,1},               3,    0.078,   0.003,   0.000,    0.000}]}.    
+
+{[{{string,'-to_lower/1-lc$^0/1-0-',1},          79,    0.080,   0.080,   0.000,    0.000}],     
+ { {string,to_lower_char,1},                     79,    0.080,   0.080,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{inet,setopts,2},                              4,    0.076,   0.013,   0.000,    0.000}],     
+ { {prim_inet,setopts,2},                         4,    0.076,   0.013,   0.000,    0.000},     %
+ [{{prim_inet,ctl_cmd,3},                         4,    0.047,   0.009,   0.000,    0.000},      
+  {{prim_inet,encode_opt_val,1},                  4,    0.016,   0.008,   0.000,    0.000}]}.    
+
+{[{{lists,splitwith,3},                           8,    0.032,   0.024,   0.000,    0.000},      
+  {{httpc_response,parse_headers,6},              9,    0.031,   0.021,   0.000,    0.000},      
+  {{httpc_response,parse_version,5},              1,    0.005,   0.004,   0.000,    0.000},      
+  {{http_response,header_list,1},                 1,    0.004,   0.003,   0.000,    0.000},      
+  {{httpc_response,parse_status_code,5},          1,    0.003,   0.002,   0.000,    0.000},      
+  {{httpc_response,parse_reason_phrase,5},        1,    0.001,   0.001,   0.000,    0.000}],     
+ { {lists,reverse,1},                            21,    0.076,   0.055,   0.000,    0.000},     %
+ [{{lists,reverse,2},                            20,    0.021,   0.021,   0.000,    0.000}]}.    
+
+{[{{httpc_request,do_send_body,7},                1,    0.074,   0.001,   0.000,    0.000}],     
+ { {http_transport,send,3},                       1,    0.074,   0.001,   0.000,    0.000},     %
+ [{{gen_tcp,send,2},                              1,    0.073,   0.002,   0.000,    0.000}]}.    
+
+{[{{http_transport,send,3},                       1,    0.073,   0.002,   0.000,    0.000}],     
+ { {gen_tcp,send,2},                              1,    0.073,   0.002,   0.000,    0.000},     %
+ [{{inet_tcp,send,2},                             1,    0.068,   0.001,   0.000,    0.000},      
+  {{inet_db,lookup_socket,1},                     1,    0.003,   0.002,   0.000,    0.000}]}.    
+
+{[{{gen_tcp,send,2},                              1,    0.068,   0.001,   0.000,    0.000}],     
+ { {inet_tcp,send,2},                             1,    0.068,   0.001,   0.000,    0.000},     %
+ [{{prim_inet,send,3},                            1,    0.067,   0.003,   0.000,    0.000}]}.    
+
+{[{{inet_tcp,send,2},                             1,    0.067,   0.003,   0.000,    0.000}],     
+ { {prim_inet,send,3},                            1,    0.067,   0.003,   0.000,    0.000},     %
+ [{{erlang,port_command,3},                       1,    0.064,   0.027,   0.000,    0.000}]}.    
+
+{[{{prim_inet,send,3},                            1,    0.064,   0.027,   0.000,    0.000}],     
+ { {erlang,port_command,3},                       1,    0.064,   0.027,   0.000,    0.000},     %
+ [{{erts_internal,port_command,3},                1,    0.037,   0.037,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_empty_queue,4},          1,    0.054,   0.047,   0.000,    0.000}],     
+ { {httpc_handler,activate_queue_timeout,2},      1,    0.054,   0.047,   0.000,    0.000},     %
+ [{{erlang,send_after,3},                         1,    0.006,   0.006,   0.000,    0.000},      
+  {{erlang,setelement,3},                         1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_http_msg,2},             1,    0.052,   0.008,   0.000,    0.000}],     
+ { {httpc_handler,handle_http_body,2},            1,    0.052,   0.008,   0.000,    0.000},     %
+ [{{httpc_handler,next_body_chunk,1},             1,    0.038,   0.002,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_response,whole_body,2},                 1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,case_insensitive_header,1},     1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,setelement,3},                         1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,list_to_integer,1},                    1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{prim_inet,setopts,2},                         4,    0.047,   0.009,   0.000,    0.000}],     
+ { {prim_inet,ctl_cmd,3},                         4,    0.047,   0.009,   0.000,    0.000},     %
+ [{{erlang,port_control,3},                       4,    0.038,   0.010,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_response,1},             1,    0.045,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,maybe_send_answer,3},           1,    0.045,   0.001,   0.000,    0.000},     %
+ [{{httpc_handler,answer_request,3},              1,    0.044,   0.012,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,maybe_send_answer,3},           1,    0.044,   0.012,   0.000,    0.000}],     
+ { {httpc_handler,answer_request,3},              1,    0.044,   0.012,   0.000,    0.000},     %
+ [{{httpc_manager,request_done,2},                1,    0.015,   0.002,   0.000,    0.000},      
+  {{httpc_response,send,2},                       1,    0.009,   0.009,   0.000,    0.000},      
+  {{erlang,setelement,3},                         3,    0.003,   0.003,   0.000,    0.000},      
+  {{proplists,get_value,3},                       1,    0.001,   0.001,   0.000,    0.000},      
+  {{lists,delete,2},                              1,    0.001,   0.001,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,maybe_make_session_available,2},   1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,cancel_timer,2},                1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_info,2},                12,    0.014,   0.014,   0.000,    0.000},      
+  {{http_transport,setopts,3},                    4,    0.004,   0.004,   0.000,    0.000},      
+  {{httpc_handler,stream,3},                      3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc_handler,handle_call,3},                 3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc_request,do_send_body,7},                2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_response,1},             2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_keep_alive_queue,2},     2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_http_msg,2},             2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_http_body,2},            2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_request,send,4},                        1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_manager,update_session,4},              1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_manager,insert_session,2},              1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,start_stream,3},                1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,end_stream,2},                  1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,answer_request,3},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {inets_trace,report_event,4},                 38,    0.040,   0.040,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{prim_inet,ctl_cmd,3},                         4,    0.038,   0.010,   0.000,    0.000}],     
+ { {erlang,port_control,3},                       4,    0.038,   0.010,   0.000,    0.000},     %
+ [{{erts_internal,port_control,3},                4,    0.028,   0.028,   0.000,    0.000}]}.    
+
+{[{{erlang,port_command,3},                       1,    0.037,   0.037,   0.000,    0.000}],     
+ { {erts_internal,port_command,3},                1,    0.037,   0.037,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_response,parse_headers,6},              2,    0.026,   0.026,   0.000,    0.026},      
+  {{httpc_request,send,4},                        1,    0.003,   0.003,   0.000,    0.003},      
+  {{string,strip_right,2},                        1,    0.001,   0.001,   0.000,    0.001}],     
+ { garbage_collect,                               4,    0.030,   0.030,   0.000,    0.030},     %
+ [ ]}.
+
+{[{{erlang,port_control,3},                       4,    0.028,   0.028,   0.000,    0.000}],     
+ { {erts_internal,port_control,3},                4,    0.028,   0.028,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_empty_queue,4},          1,    0.025,   0.003,   0.000,    0.000}],     
+ { {httpc_handler,update_session,4},              1,    0.025,   0.003,   0.000,    0.000},     %
+ [{{httpc_manager,update_session,4},              1,    0.022,   0.004,   0.000,    0.000}]}.    
+
+{[{{string,strip,2},                             16,    0.024,   0.016,   0.000,    0.000},      
+  {{string,strip_left,2},                         8,    0.000,   0.008,   0.000,    0.000}],     
+ { {string,strip_left,2},                        24,    0.024,   0.024,   0.000,    0.000},     %
+ [{{string,strip_left,2},                         8,    0.000,   0.008,   0.000,    0.000}]}.    
+
+{[{{http_response,headers,2},                     8,    0.024,   0.016,   0.000,    0.000}],     
+ { {http_response,headers,3},                     8,    0.024,   0.016,   0.000,    0.000},     %
+ [{{erlang,setelement,3},                         8,    0.008,   0.008,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,update_session,4},              1,    0.022,   0.004,   0.000,    0.000}],     
+ { {httpc_manager,update_session,4},              1,    0.022,   0.004,   0.000,    0.000},     %
+ [{{httpc_manager,session_db_name,1},             1,    0.012,   0.001,   0.000,    0.000},      
+  {{ets,update_element,3},                        1,    0.005,   0.005,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{http_response,headers,3},                     8,    0.008,   0.008,   0.000,    0.000},      
+  {{httpc_handler,handle_call,3},                 3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc_handler,answer_request,3},              3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc_handler,handle_info,2},                 2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,handle_http_msg,2},             2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_handler,init_wait_for_response_state,2},   1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,handle_http_body,2},            1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,handle_empty_queue,4},          1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,activate_queue_timeout,2},      1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,setelement,3},                        22,    0.022,   0.022,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{lists,reverse,1},                            20,    0.021,   0.021,   0.000,    0.000}],     
+ { {lists,reverse,2},                            20,    0.021,   0.021,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,update_session,4},              1,    0.012,   0.001,   0.000,    0.000},      
+  {{httpc_manager,insert_session,2},              1,    0.008,   0.001,   0.000,    0.000}],     
+ { {httpc_manager,session_db_name,1},             2,    0.020,   0.002,   0.000,    0.000},     %
+ [{{httpc_manager,make_db_name,2},                2,    0.018,   0.008,   0.000,    0.000}]}.    
+
+{[{{httpc_request,do_send_body,7},                1,    0.018,   0.002,   0.000,    0.000}],     
+ { {httpc_request,method,1},                      1,    0.018,   0.002,   0.000,    0.000},     %
+ [{{http_util,to_upper,1},                        1,    0.015,   0.001,   0.000,    0.000},      
+  {{erlang,atom_to_list,1},                       1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,session_db_name,1},             2,    0.018,   0.008,   0.000,    0.000}],     
+ { {httpc_manager,make_db_name,2},                2,    0.018,   0.008,   0.000,    0.000},     %
+ [{{erlang,list_to_atom,1},                       2,    0.006,   0.006,   0.000,    0.000},      
+  {{erlang,atom_to_list,1},                       2,    0.002,   0.002,   0.000,    0.000},      
+  {{erlang,'++',2},                               2,    0.002,   0.002,   0.000,    0.000}]}.    
+
+{[{{prim_inet,setopts,2},                         4,    0.016,   0.008,   0.000,    0.000}],     
+ { {prim_inet,encode_opt_val,1},                  4,    0.016,   0.008,   0.000,    0.000},     %
+ [{{prim_inet,enc_opt_val,2},                     4,    0.008,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,answer_request,3},              1,    0.015,   0.002,   0.000,    0.000}],     
+ { {httpc_manager,request_done,2},                1,    0.015,   0.002,   0.000,    0.000},     %
+ [{{httpc_manager,cast,2},                        1,    0.013,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_call,3},                 1,    0.015,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,insert_session,2},              1,    0.015,   0.001,   0.000,    0.000},     %
+ [{{httpc_manager,insert_session,2},              1,    0.014,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_request,method,1},                      1,    0.015,   0.001,   0.000,    0.000}],     
+ { {http_util,to_upper,1},                        1,    0.015,   0.001,   0.000,    0.000},     %
+ [{{string,to_upper,1},                           1,    0.014,   0.001,   0.000,    0.000}]}.    
+
+{[{{http_util,to_upper,1},                        1,    0.014,   0.001,   0.000,    0.000}],     
+ { {string,to_upper,1},                           1,    0.014,   0.001,   0.000,    0.000},     %
+ [{{string,'-to_upper/1-lc$^0/1-0-',1},           1,    0.013,   0.006,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_info,2},                 3,    0.014,   0.009,   0.000,    0.000}],     
+ { {httpc_response,whole_body,1},                 3,    0.014,   0.009,   0.000,    0.000},     %
+ [{{httpc_response,whole_body,2},                 3,    0.005,   0.005,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,insert_session,2},              1,    0.014,   0.004,   0.000,    0.000}],     
+ { {httpc_manager,insert_session,2},              1,    0.014,   0.004,   0.000,    0.000},     %
+ [{{httpc_manager,session_db_name,1},             1,    0.008,   0.001,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000},      
+  {{ets,insert,2},                                1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{string,to_upper,1},                           1,    0.013,   0.006,   0.000,    0.000},      
+  {{string,'-to_upper/1-lc$^0/1-0-',1},           3,    0.000,   0.004,   0.000,    0.000}],     
+ { {string,'-to_upper/1-lc$^0/1-0-',1},           4,    0.013,   0.010,   0.000,    0.000},     %
+ [{{string,to_upper_char,1},                      3,    0.003,   0.003,   0.000,    0.000},      
+  {{string,'-to_upper/1-lc$^0/1-0-',1},           3,    0.000,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,request_done,2},                1,    0.013,   0.001,   0.000,    0.000}],     
+ { {httpc_manager,cast,2},                        1,    0.013,   0.001,   0.000,    0.000},     %
+ [{{gen_server,cast,2},                           1,    0.012,   0.001,   0.000,    0.000}]}.    
+
+{[{{inet,setopts,2},                              4,    0.012,   0.008,   0.000,    0.000},      
+  {{inet,'-setopts/2-lc$^0/1-0-',1},              4,    0.000,   0.004,   0.000,    0.000}],     
+ { {inet,'-setopts/2-lc$^0/1-0-',1},              8,    0.012,   0.012,   0.000,    0.000},     %
+ [{{inet,'-setopts/2-lc$^0/1-0-',1},              4,    0.000,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,cast,2},                        1,    0.012,   0.001,   0.000,    0.000}],     
+ { {gen_server,cast,2},                           1,    0.012,   0.001,   0.000,    0.000},     %
+ [{{gen_server,do_cast,2},                        1,    0.011,   0.003,   0.000,    0.000}]}.    
+
+{[{{http_request,key_value_str,2},                8,    0.008,   0.008,   0.000,    0.000},      
+  {{httpc_manager,make_db_name,2},                2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_request,send,4},                        1,    0.001,   0.001,   0.000,    0.000},      
+  {{http_response,header_list,1},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,'++',2},                              12,    0.012,   0.012,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,cast,2},                           1,    0.011,   0.003,   0.000,    0.000}],     
+ { {gen_server,do_cast,2},                        1,    0.011,   0.003,   0.000,    0.000},     %
+ [{{gen_server,do_send,2},                        1,    0.007,   0.003,   0.000,    0.000},      
+  {{gen_server,cast_msg,1},                       1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,answer_request,3},              1,    0.009,   0.009,   0.000,    0.000}],     
+ { {httpc_response,send,2},                       1,    0.009,   0.009,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_info,2},                 2,    0.006,   0.004,   0.000,    0.000},      
+  {{httpc_handler,handle_http_msg,2},             1,    0.003,   0.002,   0.000,    0.000}],     
+ { {httpc_handler,stream,3},                      3,    0.009,   0.006,   0.000,    0.000},     %
+ [{{inets_trace,report_event,4},                  3,    0.003,   0.003,   0.000,    0.000}]}.    
+
+{[{{prim_inet,encode_opt_val,1},                  4,    0.008,   0.004,   0.000,    0.000},      
+  {{prim_inet,enc_opt_val,2},                     4,    0.000,   0.004,   0.000,    0.000}],     
+ { {prim_inet,enc_opt_val,2},                     8,    0.008,   0.008,   0.000,    0.000},     %
+ [{{prim_inet,enc_opt_val,2},                     4,    0.000,   0.004,   0.000,    0.000}]}.    
+
+{[{{lists,foldl,3},                               8,    0.008,   0.008,   0.000,    0.000}],     
+ { {httpc_response,'-parse_headers/6-fun-0-',2},   8,    0.008,   0.008,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,do_cast,2},                        1,    0.007,   0.003,   0.000,    0.000}],     
+ { {gen_server,do_send,2},                        1,    0.007,   0.003,   0.000,    0.000},     %
+ [{{erlang,send,3},                               1,    0.004,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_response,whole_body,1},                 3,    0.005,   0.005,   0.000,    0.000},      
+  {{httpc_handler,handle_http_body,2},            1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_response,whole_body,2},                 4,    0.006,   0.006,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,activate_queue_timeout,2},      1,    0.006,   0.006,   0.000,    0.000}],     
+ { {erlang,send_after,3},                         1,    0.006,   0.006,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,make_db_name,2},                2,    0.006,   0.006,   0.000,    0.000}],     
+ { {erlang,list_to_atom,1},                       2,    0.006,   0.006,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,update_session,4},              1,    0.005,   0.005,   0.000,    0.000}],     
+ { {ets,update_element,3},                        1,    0.005,   0.005,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_response,1},             1,    0.004,   0.003,   0.000,    0.000}],     
+ { {httpc_handler,end_stream,2},                  1,    0.004,   0.003,   0.000,    0.000},     %
+ [{{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_call,3},                 1,    0.003,   0.002,   0.000,    0.000},      
+  {{httpc_handler,answer_request,3},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,cancel_timer,2},                2,    0.004,   0.003,   0.000,    0.000},     %
+ [{{erlang,cancel_timer,1},                       1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{gen_server,do_send,2},                        1,    0.004,   0.004,   0.000,    0.000}],     
+ { {erlang,send,3},                               1,    0.004,   0.004,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_response,parse_status_code,5},          1,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_response,format_response,1},            1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_handler,handle_http_body,2},            1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,list_to_integer,1},                    3,    0.004,   0.004,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{string,'-to_upper/1-lc$^0/1-0-',1},           3,    0.003,   0.003,   0.000,    0.000}],     
+ { {string,to_upper_char,1},                      3,    0.003,   0.003,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_tcp,send,2},                              1,    0.003,   0.002,   0.000,    0.000}],     
+ { {inet_db,lookup_socket,1},                     1,    0.003,   0.002,   0.000,    0.000},     %
+ [{{erlang,port_get_data,1},                      1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_http_msg,2},             1,    0.003,   0.002,   0.000,    0.000}],     
+ { {httpc_handler,start_stream,3},                1,    0.003,   0.002,   0.000,    0.000},     %
+ [{{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_call,3},                 1,    0.003,   0.002,   0.000,    0.000}],     
+ { {httpc_handler,init_wait_for_response_state,2},   1,    0.003,   0.002,   0.000,    0.000},     %
+ [{{erlang,setelement,3},                         1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_handler,handle_keep_alive_queue,2},     1,    0.001,   0.001,   0.000,    0.000}],     
+ { {queue,out,1},                                 1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,answer_request,3},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {proplists,get_value,3},                       1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,answer_request,3},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {lists,delete,2},                              1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_request,do_send_body,7},                1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_request,version,1},                     1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_request,send,4},                        1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_request,post_data,4},                   1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_call,3},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_request,is_client_closing,1},           1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_request,do_send_body,7},                1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_request,headers,2},                     1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_request,send,4},                        1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_request,handle_user_info,2},            1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,answer_request,3},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,maybe_make_session_available,2},   1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_call,3},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,handle_proxy,2},                1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_response,1},             1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,handle_cookies,4},              1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_http_body,2},            1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,case_insensitive_header,1},     1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,handle_call,3},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_handler,activate_request_timeout,1},    1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{http_request,http_headers,1},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {http_request,headers_other,2},                1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,handle_msg,5},                     1,    0.001,   0.001,   0.000,    0.000}],     
+ { {gen_server,reply,2},                          1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,do_cast,2},                        1,    0.001,   0.001,   0.000,    0.000}],     
+ { {gen_server,cast_msg,1},                       1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,insert_session,2},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {ets,insert,2},                                1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{inet_db,lookup_socket,1},                     1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,port_get_data,1},                      1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_response,parse_headers,6},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,list_to_tuple,1},                      1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_handler,cancel_timer,2},                1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,cancel_timer,1},                       1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[ ],
+ { undefined,                                     0,    0.000,   0.000,   0.000,    0.000},     %
+ [{{proc_lib,init_p_do_apply,3},                  0,  399.930,   0.000, 395.283,    0.030}]}.    
+
+
+%                                               CNT       ACC       OWN      SUS      GC         
+[{ "<0.2.0>",                                   464,undefined,   1.052,undefined,undefined}].   %%
+
+{[{undefined,                                     0,  400.842,   0.037, 399.790,    0.088}],     
+ { {fprofx,apply_start_stop,4},                   0,  400.842,   0.037, 399.790,    0.088},     %
+ [{{httpc,request,1},                             1,  400.781,   0.003, 399.770,    0.088},      
+  {{fprofx,'-apply_start_stop/4-after$^0/0-0-',3},   1,    0.024,   0.004,   0.020,    0.000}]}.    
+
+{[{{fprofx,apply_start_stop,4},                   1,  400.781,   0.003, 399.770,    0.088}],     
+ { {httpc,request,1},                             1,  400.781,   0.003, 399.770,    0.088},     %
+ [{{httpc,request,2},                             1,  400.777,   0.002, 399.770,    0.088},      
+  {{httpc,default_profile,0},                     1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,request,1},                             1,  400.777,   0.002, 399.770,    0.088}],     
+ { {httpc,request,2},                             1,  400.777,   0.002, 399.770,    0.088},     %
+ [{{httpc,request,5},                             1,  400.775,   0.004, 399.770,    0.088}]}.    
+
+{[{{httpc,request,2},                             1,  400.775,   0.004, 399.770,    0.088}],     
+ { {httpc,request,5},                             1,  400.775,   0.004, 399.770,    0.088},     %
+ [{{httpc,handle_request,9},                      1,  400.187,   0.030, 399.770,    0.088},      
+  {{httpc,uri_parse,2},                           1,    0.582,   0.002,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc,header_parse,1},                        1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,request,5},                             1,  400.187,   0.030, 399.770,    0.088}],     
+ { {httpc,handle_request,9},                      1,  400.187,   0.030, 399.770,    0.088},     %
+ [{{httpc,handle_answer,3},                       1,  399.120,   0.005, 398.913,    0.088},      
+  {{httpc_manager,request,2},                     1,    0.873,   0.001,   0.857,    0.000},      
+  {{httpc,request_options,1},                     1,    0.059,   0.002,   0.000,    0.000},      
+  {{httpc,http_options,1},                        1,    0.050,   0.002,   0.000,    0.000},      
+  {{proplists,get_value,2},                       5,    0.029,   0.005,   0.000,    0.000},      
+  {{httpc,header_record,3},                       1,    0.009,   0.001,   0.000,    0.000},      
+  {{httpc,headers_as_is,2},                       1,    0.007,   0.002,   0.000,    0.000},      
+  {{httpc,maybe_encode_uri,2},                    3,    0.003,   0.003,   0.000,    0.000},      
+  {{http_util,timestamp,0},                       1,    0.003,   0.002,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc,profile_name,1},                        1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc,header_host,3},                         1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc,'-handle_request/9-lc$^0/1-0-',1},      1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_answer,3},                       1,  398.913,   0.000, 398.913,    0.000},      
+  {{gen,do_call,4},                               1,    0.857,   0.000,   0.857,    0.000},      
+  {{fprofx,'-apply_start_stop/4-after$^0/0-0-',3},   1,    0.020,   0.000,   0.020,    0.000}],     
+ { suspend,                                       3,  399.790,   0.000, 399.790,    0.000},     %
+ [ ]}.
+
+{[{{httpc,handle_request,9},                      1,  399.120,   0.005, 398.913,    0.088}],     
+ { {httpc,handle_answer,3},                       1,  399.120,   0.005, 398.913,    0.088},     %
+ [{suspend,                                       1,  398.913,   0.000, 398.913,    0.000},      
+  {{httpc,return_answer,2},                       1,    0.201,   0.008,   0.000,    0.088},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_request,9},                      1,    0.873,   0.001,   0.857,    0.000}],     
+ { {httpc_manager,request,2},                     1,    0.873,   0.001,   0.857,    0.000},     %
+ [{{httpc_manager,call,2},                        1,    0.872,   0.001,   0.857,    0.000}]}.    
+
+{[{{httpc_manager,request,2},                     1,    0.872,   0.001,   0.857,    0.000}],     
+ { {httpc_manager,call,2},                        1,    0.872,   0.001,   0.857,    0.000},     %
+ [{{httpc_manager,call,3},                        1,    0.871,   0.001,   0.857,    0.000}]}.    
+
+{[{{httpc_manager,call,2},                        1,    0.871,   0.001,   0.857,    0.000}],     
+ { {httpc_manager,call,3},                        1,    0.871,   0.001,   0.857,    0.000},     %
+ [{{gen_server,call,3},                           1,    0.870,   0.002,   0.857,    0.000}]}.    
+
+{[{{httpc_manager,call,3},                        1,    0.870,   0.002,   0.857,    0.000}],     
+ { {gen_server,call,3},                           1,    0.870,   0.002,   0.857,    0.000},     %
+ [{{gen,call,4},                                  1,    0.868,   0.002,   0.857,    0.000}]}.    
+
+{[{{gen_server,call,3},                           1,    0.868,   0.002,   0.857,    0.000}],     
+ { {gen,call,4},                                  1,    0.868,   0.002,   0.857,    0.000},     %
+ [{{gen,do_call,4},                               1,    0.865,   0.005,   0.857,    0.000},      
+  {{erlang,whereis,1},                            1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{gen,call,4},                                  1,    0.865,   0.005,   0.857,    0.000}],     
+ { {gen,do_call,4},                               1,    0.865,   0.005,   0.857,    0.000},     %
+ [{suspend,                                       1,    0.857,   0.000,   0.857,    0.000},      
+  {{erlang,send,3},                               1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,monitor,2},                            1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,demonitor,2},                          1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,request,5},                             1,    0.582,   0.002,   0.000,    0.000}],     
+ { {httpc,uri_parse,2},                           1,    0.582,   0.002,   0.000,    0.000},     %
+ [{{http_uri,parse,2},                            1,    0.579,   0.003,   0.000,    0.000},      
+  {{httpc,scheme_defaults,0},                     1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,uri_parse,2},                           1,    0.579,   0.003,   0.000,    0.000}],     
+ { {http_uri,parse,2},                            1,    0.579,   0.003,   0.000,    0.000},     %
+ [{{http_uri,parse_uri_rest,4},                   1,    0.326,   0.006,   0.000,    0.000},      
+  {{http_uri,parse_scheme,2},                     1,    0.250,   0.057,   0.000,    0.000}]}.    
+
+{[{{http_uri,parse_uri_rest,4},                   3,    0.218,   0.006,   0.000,    0.000},      
+  {{http_uri,parse_scheme,2},                     1,    0.093,   0.004,   0.000,    0.000},      
+  {{http_uri,parse_host_port,4},                  1,    0.072,   0.002,   0.000,    0.000},      
+  {{http_uri,parse_path_query,1},                 1,    0.022,   0.002,   0.000,    0.000}],     
+ { {http_uri,split_uri,5},                        6,    0.405,   0.014,   0.000,    0.000},     %
+ [{{inets_regexp,first_match,2},                  6,    0.340,   0.012,   0.000,    0.000},      
+  {{string,substr,3},                             2,    0.051,   0.004,   0.000,    0.000}]}.    
+
+{[{{http_uri,split_uri,5},                        6,    0.340,   0.012,   0.000,    0.000},      
+  {{inets_regexp,first_match,2},                  6,    0.000,   0.012,   0.000,    0.000}],     
+ { {inets_regexp,first_match,2},                 12,    0.340,   0.024,   0.000,    0.000},     %
+ [{{inets_regexp,first_match,3},                  6,    0.234,   0.011,   0.000,    0.000},      
+  {{inets_regexp,parse,1},                        6,    0.082,   0.012,   0.000,    0.000},      
+  {{inets_regexp,first_match,2},                  6,    0.000,   0.012,   0.000,    0.000}]}.    
+
+{[{{http_uri,parse,2},                            1,    0.326,   0.006,   0.000,    0.000}],     
+ { {http_uri,parse_uri_rest,4},                   1,    0.326,   0.006,   0.000,    0.000},     %
+ [{{http_uri,split_uri,5},                        3,    0.218,   0.006,   0.000,    0.000},      
+  {{http_uri,parse_host_port,4},                  1,    0.076,   0.003,   0.000,    0.000},      
+  {{http_uri,parse_path_query,1},                 1,    0.026,   0.003,   0.000,    0.000}]}.    
+
+{[{{http_uri,parse,2},                            1,    0.250,   0.057,   0.000,    0.000}],     
+ { {http_uri,parse_scheme,2},                     1,    0.250,   0.057,   0.000,    0.000},     %
+ [{{http_uri,split_uri,5},                        1,    0.093,   0.004,   0.000,    0.000},      
+  {{http_uri,which_scheme_defaults,1},            1,    0.045,   0.044,   0.000,    0.000},      
+  {{erlang,list_to_atom,1},                       1,    0.035,   0.035,   0.000,    0.000},      
+  {{http_util,to_lower,1},                        1,    0.019,   0.001,   0.000,    0.000},      
+  {{lists,keysearch,3},                           1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,first_match,2},                  6,    0.234,   0.011,   0.000,    0.000},      
+  {{inets_regexp,first_match,3},                 56,    0.000,   0.108,   0.000,    0.000}],     
+ { {inets_regexp,first_match,3},                 62,    0.234,   0.119,   0.000,    0.000},     %
+ [{{inets_regexp,re_apply,3},                    57,    0.115,   0.057,   0.000,    0.000},      
+  {{inets_regexp,first_match,3},                 56,    0.000,   0.108,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_answer,3},                       1,    0.201,   0.008,   0.000,    0.088}],     
+ { {httpc,return_answer,2},                       1,    0.201,   0.008,   0.000,    0.088},     %
+ [{{httpc,maybe_format_body,2},                   1,    0.187,   0.058,   0.000,    0.088},      
+  {{proplists,get_value,3},                       1,    0.006,   0.003,   0.000,    0.000}]}.    
+
+{[{{httpc,return_answer,2},                       1,    0.187,   0.058,   0.000,    0.088}],     
+ { {httpc,maybe_format_body,2},                   1,    0.187,   0.058,   0.000,    0.088},     %
+ [{garbage_collect,                               1,    0.088,   0.088,   0.000,    0.088},      
+  {{erlang,binary_to_list,1},                     1,    0.037,   0.037,   0.000,    0.000},      
+  {{proplists,get_value,3},                       1,    0.004,   0.002,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,first_match,3},                 57,    0.115,   0.057,   0.000,    0.000}],     
+ { {inets_regexp,re_apply,3},                    57,    0.115,   0.057,   0.000,    0.000},     %
+ [{{inets_regexp,re_apply,4},                    57,    0.058,   0.057,   0.000,    0.000}]}.    
+
+{[{{httpc,maybe_format_body,2},                   1,    0.088,   0.088,   0.000,    0.088}],     
+ { garbage_collect,                               1,    0.088,   0.088,   0.000,    0.088},     %
+ [ ]}.
+
+{[{{inets_regexp,first_match,2},                  6,    0.082,   0.012,   0.000,    0.000}],     
+ { {inets_regexp,parse,1},                        6,    0.082,   0.012,   0.000,    0.000},     %
+ [{{inets_regexp,reg,1},                          6,    0.070,   0.006,   0.000,    0.000}]}.    
+
+{[{{http_uri,parse_uri_rest,4},                   1,    0.076,   0.003,   0.000,    0.000}],     
+ { {http_uri,parse_host_port,4},                  1,    0.076,   0.003,   0.000,    0.000},     %
+ [{{http_uri,split_uri,5},                        1,    0.072,   0.002,   0.000,    0.000},      
+  {{http_uri,int_port,1},                         1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,parse,1},                        6,    0.070,   0.006,   0.000,    0.000}],     
+ { {inets_regexp,reg,1},                          6,    0.070,   0.006,   0.000,    0.000},     %
+ [{{inets_regexp,reg1,1},                         6,    0.064,   0.012,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,reg,1},                          6,    0.064,   0.012,   0.000,    0.000}],     
+ { {inets_regexp,reg1,1},                         6,    0.064,   0.012,   0.000,    0.000},     %
+ [{{inets_regexp,reg2,1},                         6,    0.046,   0.012,   0.000,    0.000},      
+  {{inets_regexp,reg1p,2},                        6,    0.006,   0.006,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_request,9},                      1,    0.059,   0.002,   0.000,    0.000}],     
+ { {httpc,request_options,1},                     1,    0.059,   0.002,   0.000,    0.000},     %
+ [{{httpc,request_options,3},                     1,    0.054,   0.002,   0.000,    0.000},      
+  {{httpc,request_options_defaults,0},            1,    0.003,   0.002,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,re_apply,3},                    57,    0.058,   0.057,   0.000,    0.000}],     
+ { {inets_regexp,re_apply,4},                    57,    0.058,   0.057,   0.000,    0.000},     %
+ [{{inets_regexp,re_apply_more,3},                1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{proplists,get_value,2},                       8,    0.042,   0.008,   0.000,    0.000},      
+  {{httpc,return_answer,2},                       1,    0.006,   0.003,   0.000,    0.000},      
+  {{httpc,headers_as_is,2},                       1,    0.005,   0.001,   0.000,    0.000},      
+  {{httpc,maybe_format_body,2},                   1,    0.004,   0.002,   0.000,    0.000},      
+  {{proplists,get_value,3},                      43,    0.000,   0.043,   0.000,    0.000}],     
+ { {proplists,get_value,3},                      54,    0.057,   0.057,   0.000,    0.000},     %
+ [{{proplists,get_value,3},                      43,    0.000,   0.043,   0.000,    0.000}]}.    
+
+{[{{httpc,request_options,1},                     1,    0.054,   0.002,   0.000,    0.000},      
+  {{httpc,request_options,3},                     8,    0.000,   0.016,   0.000,    0.000}],     
+ { {httpc,request_options,3},                     9,    0.054,   0.018,   0.000,    0.000},     %
+ [{{httpc,request_options_sanity_check,1},        1,    0.025,   0.004,   0.000,    0.000},      
+  {{lists,keysearch,3},                           8,    0.008,   0.008,   0.000,    0.000},      
+  {{lists,reverse,1},                             1,    0.003,   0.002,   0.000,    0.000},      
+  {{httpc,request_options,3},                     8,    0.000,   0.016,   0.000,    0.000}]}.    
+
+{[{{http_uri,split_uri,5},                        2,    0.051,   0.004,   0.000,    0.000}],     
+ { {string,substr,3},                             2,    0.051,   0.004,   0.000,    0.000},     %
+ [{{string,substr1,2},                            2,    0.040,   0.012,   0.000,    0.000},      
+  {{string,substr2,2},                            2,    0.007,   0.002,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_request,9},                      5,    0.029,   0.005,   0.000,    0.000},      
+  {{httpc,request_options_sanity_check,1},        3,    0.021,   0.003,   0.000,    0.000}],     
+ { {proplists,get_value,2},                       8,    0.050,   0.008,   0.000,    0.000},     %
+ [{{proplists,get_value,3},                       8,    0.042,   0.008,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_request,9},                      1,    0.050,   0.002,   0.000,    0.000}],     
+ { {httpc,http_options,1},                        1,    0.050,   0.002,   0.000,    0.000},     %
+ [{{httpc,http_options,3},                        1,    0.041,   0.003,   0.000,    0.000},      
+  {{httpc,http_options_default,0},                1,    0.007,   0.004,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,reg1,1},                         6,    0.046,   0.012,   0.000,    0.000}],     
+ { {inets_regexp,reg2,1},                         6,    0.046,   0.012,   0.000,    0.000},     %
+ [{{inets_regexp,reg3,1},                         6,    0.028,   0.012,   0.000,    0.000},      
+  {{inets_regexp,reg2p,2},                        6,    0.006,   0.006,   0.000,    0.000}]}.    
+
+{[{{http_uri,parse_scheme,2},                     1,    0.045,   0.044,   0.000,    0.000}],     
+ { {http_uri,which_scheme_defaults,1},            1,    0.045,   0.044,   0.000,    0.000},     %
+ [{{lists,keysearch,3},                           1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,http_options,1},                        1,    0.041,   0.003,   0.000,    0.000},      
+  {{httpc,http_options,3},                        8,    0.000,   0.022,   0.000,    0.000}],     
+ { {httpc,http_options,3},                        9,    0.041,   0.025,   0.000,    0.000},     %
+ [{{lists,keysearch,3},                           8,    0.008,   0.008,   0.000,    0.000},      
+  {{erlang,setelement,3},                         8,    0.008,   0.008,   0.000,    0.000},      
+  {{httpc,http_options,3},                        8,    0.000,   0.022,   0.000,    0.000}]}.    
+
+{[{{string,substr,3},                             2,    0.040,   0.012,   0.000,    0.000},      
+  {{string,substr1,2},                           19,    0.000,   0.028,   0.000,    0.000}],     
+ { {string,substr1,2},                           21,    0.040,   0.040,   0.000,    0.000},     %
+ [{{string,substr1,2},                           19,    0.000,   0.028,   0.000,    0.000}]}.    
+
+{[{{httpc,maybe_format_body,2},                   1,    0.037,   0.037,   0.000,    0.000}],     
+ { {erlang,binary_to_list,1},                     1,    0.037,   0.037,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{http_uri,parse_scheme,2},                     1,    0.035,   0.035,   0.000,    0.000}],     
+ { {erlang,list_to_atom,1},                       1,    0.035,   0.035,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{inets_regexp,reg2,1},                         6,    0.028,   0.012,   0.000,    0.000}],     
+ { {inets_regexp,reg3,1},                         6,    0.028,   0.012,   0.000,    0.000},     %
+ [{{inets_regexp,reg4,1},                         6,    0.010,   0.008,   0.000,    0.000},      
+  {{inets_regexp,reg3p,2},                        6,    0.006,   0.006,   0.000,    0.000}]}.    
+
+{[{{http_uri,parse_uri_rest,4},                   1,    0.026,   0.003,   0.000,    0.000}],     
+ { {http_uri,parse_path_query,1},                 1,    0.026,   0.003,   0.000,    0.000},     %
+ [{{http_uri,split_uri,5},                        1,    0.022,   0.002,   0.000,    0.000},      
+  {{http_uri,path,1},                             1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,request_options,3},                     1,    0.025,   0.004,   0.000,    0.000}],     
+ { {httpc,request_options_sanity_check,1},        1,    0.025,   0.004,   0.000,    0.000},     %
+ [{{proplists,get_value,2},                       3,    0.021,   0.003,   0.000,    0.000}]}.    
+
+{[{{fprofx,apply_start_stop,4},                   1,    0.024,   0.004,   0.020,    0.000}],     
+ { {fprofx,'-apply_start_stop/4-after$^0/0-0-',3},   1,    0.024,   0.004,   0.020,    0.000},     %
+ [{suspend,                                       1,    0.020,   0.000,   0.020,    0.000}]}.    
+
+{[{{http_uri,parse_scheme,2},                     1,    0.019,   0.001,   0.000,    0.000}],     
+ { {http_util,to_lower,1},                        1,    0.019,   0.001,   0.000,    0.000},     %
+ [{{string,to_lower,1},                           1,    0.018,   0.001,   0.000,    0.000}]}.    
+
+{[{{http_util,to_lower,1},                        1,    0.018,   0.001,   0.000,    0.000}],     
+ { {string,to_lower,1},                           1,    0.018,   0.001,   0.000,    0.000},     %
+ [{{string,'-to_lower/1-lc$^0/1-0-',1},           1,    0.017,   0.007,   0.000,    0.000}]}.    
+
+{[{{httpc,request_options,3},                     8,    0.008,   0.008,   0.000,    0.000},      
+  {{httpc,http_options,3},                        8,    0.008,   0.008,   0.000,    0.000},      
+  {{http_uri,which_scheme_defaults,1},            1,    0.001,   0.001,   0.000,    0.000},      
+  {{http_uri,parse_scheme,2},                     1,    0.001,   0.001,   0.000,    0.000}],     
+ { {lists,keysearch,3},                          18,    0.018,   0.018,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{string,to_lower,1},                           1,    0.017,   0.007,   0.000,    0.000},      
+  {{string,'-to_lower/1-lc$^0/1-0-',1},           4,    0.000,   0.006,   0.000,    0.000}],     
+ { {string,'-to_lower/1-lc$^0/1-0-',1},           5,    0.017,   0.013,   0.000,    0.000},     %
+ [{{string,to_lower_char,1},                      4,    0.004,   0.004,   0.000,    0.000},      
+  {{string,'-to_lower/1-lc$^0/1-0-',1},           4,    0.000,   0.006,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,reg3,1},                         6,    0.010,   0.008,   0.000,    0.000}],     
+ { {inets_regexp,reg4,1},                         6,    0.010,   0.008,   0.000,    0.000},     %
+ [{{inets_regexp,escape_char,1},                  2,    0.002,   0.002,   0.000,    0.000}]}.    
+
+{[{{httpc,http_options,3},                        8,    0.008,   0.008,   0.000,    0.000},      
+  {{httpc,validate_headers,3},                    2,    0.002,   0.002,   0.000,    0.000}],     
+ { {erlang,setelement,3},                        10,    0.010,   0.010,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,handle_request,9},                      1,    0.009,   0.001,   0.000,    0.000}],     
+ { {httpc,header_record,3},                       1,    0.009,   0.001,   0.000,    0.000},     %
+ [{{httpc,header_record,4},                       1,    0.008,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,header_record,3},                       1,    0.008,   0.001,   0.000,    0.000}],     
+ { {httpc,header_record,4},                       1,    0.008,   0.001,   0.000,    0.000},     %
+ [{{httpc,validate_headers,3},                    1,    0.007,   0.002,   0.000,    0.000}]}.    
+
+{[{{string,substr,3},                             2,    0.007,   0.002,   0.000,    0.000},      
+  {{string,substr2,2},                            5,    0.000,   0.005,   0.000,    0.000}],     
+ { {string,substr2,2},                            7,    0.007,   0.007,   0.000,    0.000},     %
+ [{{string,substr2,2},                            5,    0.000,   0.005,   0.000,    0.000}]}.    
+
+{[{{httpc,header_record,4},                       1,    0.007,   0.002,   0.000,    0.000},      
+  {{httpc,validate_headers,3},                    2,    0.000,   0.003,   0.000,    0.000}],     
+ { {httpc,validate_headers,3},                    3,    0.007,   0.005,   0.000,    0.000},     %
+ [{{erlang,setelement,3},                         2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc,validate_headers,3},                    2,    0.000,   0.003,   0.000,    0.000}]}.    
+
+{[{{httpc,http_options,1},                        1,    0.007,   0.004,   0.000,    0.000}],     
+ { {httpc,http_options_default,0},                1,    0.007,   0.004,   0.000,    0.000},     %
+ [{{httpc,boolfun,0},                             3,    0.003,   0.003,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_request,9},                      1,    0.007,   0.002,   0.000,    0.000}],     
+ { {httpc,headers_as_is,2},                       1,    0.007,   0.002,   0.000,    0.000},     %
+ [{{proplists,get_value,3},                       1,    0.005,   0.001,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,reg3,1},                         6,    0.006,   0.006,   0.000,    0.000}],     
+ { {inets_regexp,reg3p,2},                        6,    0.006,   0.006,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{inets_regexp,reg2,1},                         6,    0.006,   0.006,   0.000,    0.000}],     
+ { {inets_regexp,reg2p,2},                        6,    0.006,   0.006,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{inets_regexp,reg1,1},                         6,    0.006,   0.006,   0.000,    0.000}],     
+ { {inets_regexp,reg1p,2},                        6,    0.006,   0.006,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{string,'-to_lower/1-lc$^0/1-0-',1},           4,    0.004,   0.004,   0.000,    0.000}],     
+ { {string,to_lower_char,1},                      4,    0.004,   0.004,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,http_options_default,0},                3,    0.003,   0.003,   0.000,    0.000},      
+  {{httpc,request_options_defaults,0},            1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,boolfun,0},                             4,    0.004,   0.004,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,request_options,3},                     1,    0.003,   0.002,   0.000,    0.000}],     
+ { {lists,reverse,1},                             1,    0.003,   0.002,   0.000,    0.000},     %
+ [{{lists,reverse,2},                             1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,request,5},                             1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc,handle_request,9},                      1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc,handle_answer,3},                       1,    0.001,   0.001,   0.000,    0.000}],     
+ { {inets_trace,report_event,4},                  3,    0.003,   0.003,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,request_options,1},                     1,    0.003,   0.002,   0.000,    0.000}],     
+ { {httpc,request_options_defaults,0},            1,    0.003,   0.002,   0.000,    0.000},     %
+ [{{httpc,boolfun,0},                             1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc,handle_request,9},                      3,    0.003,   0.003,   0.000,    0.000}],     
+ { {httpc,maybe_encode_uri,2},                    3,    0.003,   0.003,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,handle_request,9},                      1,    0.003,   0.002,   0.000,    0.000}],     
+ { {http_util,timestamp,0},                       1,    0.003,   0.002,   0.000,    0.000},     %
+ [{{os,timestamp,0},                              1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{inets_regexp,reg4,1},                         2,    0.002,   0.002,   0.000,    0.000}],     
+ { {inets_regexp,escape_char,1},                  2,    0.002,   0.002,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{http_util,timestamp,0},                       1,    0.001,   0.001,   0.000,    0.000}],     
+ { {os,timestamp,0},                              1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{lists,reverse,1},                             1,    0.001,   0.001,   0.000,    0.000}],     
+ { {lists,reverse,2},                             1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{inets_regexp,re_apply,4},                     1,    0.001,   0.001,   0.000,    0.000}],     
+ { {inets_regexp,re_apply_more,3},                1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,uri_parse,2},                           1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,scheme_defaults,0},                     1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,handle_request,9},                      1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,profile_name,1},                        1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,request,5},                             1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,header_parse,1},                        1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,handle_request,9},                      1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,header_host,3},                         1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,request,1},                             1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,default_profile,0},                     1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc,handle_request,9},                      1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc,'-handle_request/9-lc$^0/1-0-',1},      1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{http_uri,parse_path_query,1},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {http_uri,path,1},                             1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{http_uri,parse_host_port,4},                  1,    0.001,   0.001,   0.000,    0.000}],     
+ { {http_uri,int_port,1},                         1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,call,4},                                  1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,whereis,1},                            1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                               1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,send,3},                               1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                               1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,monitor,2},                            1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                               1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,demonitor,2},                          1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[ ],
+ { undefined,                                     0,    0.000,   0.000,   0.000,    0.000},     %
+ [{{fprofx,apply_start_stop,4},                   0,  400.842,   0.037, 399.790,    0.088}]}.    
+
+
+%                                               CNT       ACC       OWN      SUS      GC         
+[{ "<0.43.0>",                                   45,undefined,   0.120,undefined,undefined}].   %%
+
+{[{{proc_lib,init_p_do_apply,3},                  0,  400.011,   0.002, 399.898,    0.000},      
+  {undefined,                                     0,    0.007,   0.002,   0.000,    0.005},      
+  {{gen_server,handle_msg,5},                     1,    0.000,   0.003,   0.000,    0.000},      
+  {{gen_server,handle_common_reply,6},            1,    0.000,   0.001,   0.000,    0.000}],     
+ { {gen_server,loop,6},                           2,  400.018,   0.008, 399.898,    0.005},     %
+ [{{gen_server,decode_msg,8},                     2,  400.009,   0.002, 399.898,    0.000},      
+  {suspend,                                       2,  399.145,   0.000, 399.145,    0.000},      
+  {garbage_collect,                               1,    0.005,   0.005,   0.000,    0.005}]}.    
+
+{[{undefined,                                     0,  400.011,   0.000, 399.898,    0.000}],     
+ { {proc_lib,init_p_do_apply,3},                  0,  400.011,   0.000, 399.898,    0.000},     %
+ [{{gen_server,loop,6},                           0,  400.011,   0.002, 399.898,    0.000}]}.    
+
+{[{{gen_server,loop,6},                           2,  400.009,   0.002, 399.898,    0.000}],     
+ { {gen_server,decode_msg,8},                     2,  400.009,   0.002, 399.898,    0.000},     %
+ [{{gen_server,handle_msg,5},                     2,  400.008,   0.005, 399.898,    0.000}]}.    
+
+{[{{gen_server,decode_msg,8},                     2,  400.008,   0.005, 399.898,    0.000}],     
+ { {gen_server,handle_msg,5},                     2,  400.008,   0.005, 399.898,    0.000},     %
+ [{{httpc_manager,handle_call,3},                 1,    0.840,   0.007,   0.753,    0.000},      
+  {{gen_server,dispatch,3},                       1,    0.011,   0.002,   0.000,    0.000},      
+  {{gen_server,handle_common_reply,6},            1,    0.002,   0.001,   0.000,    0.000},      
+  {{gen_server,reply,2},                          1,    0.001,   0.001,   0.000,    0.000},      
+  {{gen_server,loop,6},                           1,    0.000,   0.003,   0.000,    0.000}]}.    
+
+{[{{gen_server,loop,6},                           2,  399.145,   0.000, 399.145,    0.000},      
+  {{gen,do_call,4},                               1,    0.753,   0.000,   0.753,    0.000}],     
+ { suspend,                                       3,  399.898,   0.000, 399.898,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,handle_msg,5},                     1,    0.840,   0.007,   0.753,    0.000}],     
+ { {httpc_manager,handle_call,3},                 1,    0.840,   0.007,   0.753,    0.000},     %
+ [{{httpc_manager,handle_request,2},              1,    0.832,   0.007,   0.753,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,handle_call,3},                 1,    0.832,   0.007,   0.753,    0.000}],     
+ { {httpc_manager,handle_request,2},              1,    0.832,   0.007,   0.753,    0.000},     %
+ [{{httpc_manager,pipeline_or_keep_alive,3},      1,    0.776,   0.003,   0.753,    0.000},      
+  {{httpc_manager,select_session,5},              1,    0.042,   0.006,   0.000,    0.000},      
+  {{httpc_manager,generate_request_id,1},         1,    0.005,   0.003,   0.000,    0.000},      
+  {{httpc_manager,session_type,1},                1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_manager,handle_cookies,2},              1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,handle_request,2},              1,    0.776,   0.003,   0.753,    0.000}],     
+ { {httpc_manager,pipeline_or_keep_alive,3},      1,    0.776,   0.003,   0.753,    0.000},     %
+ [{{httpc_handler,send,2},                        1,    0.771,   0.001,   0.753,    0.000},      
+  {{ets,insert,2},                                1,    0.002,   0.002,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,pipeline_or_keep_alive,3},      1,    0.771,   0.001,   0.753,    0.000}],     
+ { {httpc_handler,send,2},                        1,    0.771,   0.001,   0.753,    0.000},     %
+ [{{httpc_handler,call,3},                        1,    0.770,   0.001,   0.753,    0.000}]}.    
+
+{[{{httpc_handler,send,2},                        1,    0.770,   0.001,   0.753,    0.000}],     
+ { {httpc_handler,call,3},                        1,    0.770,   0.001,   0.753,    0.000},     %
+ [{{gen_server,call,3},                           1,    0.769,   0.002,   0.753,    0.000}]}.    
+
+{[{{httpc_handler,call,3},                        1,    0.769,   0.002,   0.753,    0.000}],     
+ { {gen_server,call,3},                           1,    0.769,   0.002,   0.753,    0.000},     %
+ [{{gen,call,4},                                  1,    0.767,   0.001,   0.753,    0.000}]}.    
+
+{[{{gen_server,call,3},                           1,    0.767,   0.001,   0.753,    0.000}],     
+ { {gen,call,4},                                  1,    0.767,   0.001,   0.753,    0.000},     %
+ [{{gen,do_call,4},                               1,    0.766,   0.009,   0.753,    0.000}]}.    
+
+{[{{gen,call,4},                                  1,    0.766,   0.009,   0.753,    0.000}],     
+ { {gen,do_call,4},                               1,    0.766,   0.009,   0.753,    0.000},     %
+ [{suspend,                                       1,    0.753,   0.000,   0.753,    0.000},      
+  {{erlang,demonitor,2},                          1,    0.002,   0.002,   0.000,    0.000},      
+  {{erlang,send,3},                               1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,monitor,2},                            1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,handle_request,2},              1,    0.042,   0.006,   0.000,    0.000}],     
+ { {httpc_manager,select_session,5},              1,    0.042,   0.006,   0.000,    0.000},     %
+ [{{ets,match,2},                                 1,    0.023,   0.023,   0.000,    0.000},      
+  {{httpc_manager,select_session,4},              1,    0.010,   0.001,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_request,is_idempotent,1},               1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,select_session,5},              1,    0.023,   0.023,   0.000,    0.000}],     
+ { {ets,match,2},                                 1,    0.023,   0.023,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,handle_msg,5},                     1,    0.011,   0.002,   0.000,    0.000}],     
+ { {gen_server,dispatch,3},                       1,    0.011,   0.002,   0.000,    0.000},     %
+ [{{httpc_manager,handle_cast,2},                 1,    0.009,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,select_session,5},              1,    0.010,   0.001,   0.000,    0.000}],     
+ { {httpc_manager,select_session,4},              1,    0.010,   0.001,   0.000,    0.000},     %
+ [{{httpc_manager,select_session,2},              1,    0.009,   0.004,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,select_session,4},              1,    0.009,   0.004,   0.000,    0.000}],     
+ { {httpc_manager,select_session,2},              1,    0.009,   0.004,   0.000,    0.000},     %
+ [{{httpc_manager,'-select_session/2-lc$^0/1-0-',2},   1,    0.003,   0.002,   0.000,    0.000},      
+  {{lists,keysort,2},                             1,    0.001,   0.001,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{gen_server,dispatch,3},                       1,    0.009,   0.004,   0.000,    0.000}],     
+ { {httpc_manager,handle_cast,2},                 1,    0.009,   0.004,   0.000,    0.000},     %
+ [{{ets,delete,2},                                1,    0.004,   0.004,   0.000,    0.000},      
+  {{inets_trace,report_event,4},                  1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,select_session,5},              2,    0.002,   0.002,   0.000,    0.000},      
+  {{httpc_manager,select_session,2},              1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_manager,handle_cast,2},                 1,    0.001,   0.001,   0.000,    0.000},      
+  {{httpc_manager,handle_call,3},                 1,    0.001,   0.001,   0.000,    0.000}],     
+ { {inets_trace,report_event,4},                  5,    0.005,   0.005,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,handle_request,2},              1,    0.005,   0.003,   0.000,    0.000}],     
+ { {httpc_manager,generate_request_id,1},         1,    0.005,   0.003,   0.000,    0.000},     %
+ [{{erlang,setelement,3},                         1,    0.001,   0.001,   0.000,    0.000},      
+  {{erlang,make_ref,0},                           1,    0.001,   0.001,   0.000,    0.000}]}.    
+
+{[{{gen_server,loop,6},                           1,    0.005,   0.005,   0.000,    0.005}],     
+ { garbage_collect,                               1,    0.005,   0.005,   0.000,    0.005},     %
+ [ ]}.
+
+{[{{httpc_manager,handle_cast,2},                 1,    0.004,   0.004,   0.000,    0.000}],     
+ { {ets,delete,2},                                1,    0.004,   0.004,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,select_session,2},              1,    0.003,   0.002,   0.000,    0.000},      
+  {{httpc_manager,'-select_session/2-lc$^0/1-0-',2},   1,    0.000,   0.001,   0.000,    0.000}],     
+ { {httpc_manager,'-select_session/2-lc$^0/1-0-',2},   2,    0.003,   0.003,   0.000,    0.000},     %
+ [{{httpc_manager,'-select_session/2-lc$^0/1-0-',2},   1,    0.000,   0.001,   0.000,    0.000}]}.    
+
+{[{{gen_server,handle_msg,5},                     1,    0.002,   0.001,   0.000,    0.000}],     
+ { {gen_server,handle_common_reply,6},            1,    0.002,   0.001,   0.000,    0.000},     %
+ [{{gen_server,loop,6},                           1,    0.000,   0.001,   0.000,    0.000}]}.    
+
+{[{{httpc_manager,pipeline_or_keep_alive,3},      1,    0.002,   0.002,   0.000,    0.000}],     
+ { {ets,insert,2},                                1,    0.002,   0.002,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                               1,    0.002,   0.002,   0.000,    0.000}],     
+ { {erlang,demonitor,2},                          1,    0.002,   0.002,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,select_session,2},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {lists,keysort,2},                             1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,select_session,5},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_request,is_idempotent,1},               1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,handle_request,2},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_manager,session_type,1},                1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,handle_request,2},              1,    0.001,   0.001,   0.000,    0.000}],     
+ { {httpc_manager,handle_cookies,2},              1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen_server,handle_msg,5},                     1,    0.001,   0.001,   0.000,    0.000}],     
+ { {gen_server,reply,2},                          1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,generate_request_id,1},         1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,setelement,3},                         1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                               1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,send,3},                               1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                               1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,monitor,2},                            1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[{{httpc_manager,generate_request_id,1},         1,    0.001,   0.001,   0.000,    0.000}],     
+ { {erlang,make_ref,0},                           1,    0.001,   0.001,   0.000,    0.000},     %
+ [ ]}.
+
+{[ ],
+ { undefined,                                     0,    0.000,   0.000,   0.000,    0.000},     %
+ [{{proc_lib,init_p_do_apply,3},                  0,  400.011,   0.000, 399.898,    0.000},      
+  {{gen_server,loop,6},                           0,    0.007,   0.002,   0.000,    0.005}]}.    
+
+

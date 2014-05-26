@@ -1,0 +1,2110 @@
+events: Time
+summary: 222813
+fl=proc_lib
+fn={proc_lib,init_p_do_apply,3}
+1 0
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=0 1
+1 221695
+fl=gen_server
+fn={gen_server,loop,6}
+1 119
+cfl=gen_server
+cfn={gen_server,decode_msg,8}
+calls=5 1
+1 221694
+cfl=pseudo
+cfn=suspend
+calls=3 1
+1 216520
+fl=gen_server
+fn={gen_server,decode_msg,8}
+1 10
+cfl=gen_server
+cfn={gen_server,handle_msg,5}
+calls=5 1
+1 221693
+fl=gen_server
+fn={gen_server,handle_msg,5}
+1 32
+cfl=gen_server
+cfn={gen_server,handle_common_reply,6}
+calls=4 1
+1 17832
+cfl=gen_server
+cfn={gen_server,dispatch,3}
+calls=4 1
+1 4221
+cfl=httpc_handler
+cfn={httpc_handler,handle_call,3}
+calls=1 1
+1 765
+cfl=gen_server
+cfn={gen_server,reply,2}
+calls=1 1
+1 1
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=1 1
+1 0
+fl=pseudo
+fn=suspend
+1 216520
+fl=gen_server
+fn={gen_server,handle_common_reply,6}
+1 27
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=4 1
+1 0
+fl=gen_server
+fn={gen_server,dispatch,3}
+1 8
+cfl=httpc_handler
+cfn={httpc_handler,handle_info,2}
+calls=4 1
+1 4213
+fl=httpc_handler
+fn={httpc_handler,handle_info,2}
+1 83
+cfl=httpc_response
+cfn={httpc_response,parse,1}
+calls=1 1
+1 2659
+cfl=httpc_handler
+cfn={httpc_handler,handle_http_msg,2}
+calls=2 1
+1 1200
+cfl=httpc_handler
+cfn={httpc_handler,next_body_chunk,1}
+calls=2 1
+1 227
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=12 1
+1 23
+cfl=httpc_response
+cfn={httpc_response,whole_body,1}
+calls=3 1
+1 13
+cfl=httpc_handler
+cfn={httpc_handler,stream,3}
+calls=2 1
+1 6
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=2 1
+1 2
+fl=httpc_response
+fn={httpc_response,parse,1}
+1 1
+cfl=httpc_response
+cfn={httpc_response,parse_version,5}
+calls=1 1
+1 2658
+fl=httpc_response
+fn={httpc_response,parse_version,5}
+1 24
+cfl=httpc_response
+cfn={httpc_response,parse_status_code,5}
+calls=1 1
+1 2546
+cfl=lists
+cfn={lists,reverse,1}
+calls=1 1
+1 88
+cfl=httpc_response
+cfn={httpc_response,parse_version,5}
+calls=8 1
+1 0
+fl=httpc_response
+fn={httpc_response,parse_status_code,5}
+1 8
+cfl=httpc_response
+cfn={httpc_response,parse_reason_phrase,5}
+calls=1 1
+1 2533
+cfl=lists
+cfn={lists,reverse,1}
+calls=1 1
+1 3
+cfl=erlang
+cfn={erlang,list_to_integer,1}
+calls=1 1
+1 2
+cfl=httpc_response
+cfn={httpc_response,parse_status_code,5}
+calls=3 1
+1 0
+fl=httpc_response
+fn={httpc_response,parse_reason_phrase,5}
+1 5
+cfl=httpc_response
+cfn={httpc_response,parse_headers,6}
+calls=1 1
+1 2527
+cfl=lists
+cfn={lists,reverse,1}
+calls=1 1
+1 1
+cfl=httpc_response
+cfn={httpc_response,parse_reason_phrase,5}
+calls=2 1
+1 0
+fl=httpc_response
+fn={httpc_response,parse_headers,6}
+1 622
+cfl=http_response
+cfn={http_response,headers,2}
+calls=1 1
+1 1840
+cfl=lists
+cfn={lists,reverse,1}
+calls=9 1
+1 27
+cfl=lists
+cfn={lists,foldl,3}
+calls=1 1
+1 25
+cfl=pseudo
+cfn=garbage_collect
+calls=2 1
+1 12
+cfl=erlang
+cfn={erlang,list_to_tuple,1}
+calls=1 1
+1 1
+cfl=httpc_response
+cfn={httpc_response,parse_headers,6}
+calls=288 1
+1 0
+fl=http_response
+fn={http_response,headers,2}
+1 49
+cfl=string
+cfn={string,strip,1}
+calls=16 1
+1 904
+cfl=lists
+cfn={lists,splitwith,2}
+calls=8 1
+1 472
+cfl=http_util
+cfn={http_util,to_lower,1}
+calls=8 1
+1 391
+cfl=http_response
+cfn={http_response,headers,3}
+calls=8 1
+1 24
+cfl=http_response
+cfn={http_response,headers,2}
+calls=8 1
+1 0
+fl=httpc_handler
+fn={httpc_handler,handle_http_msg,2}
+1 14
+cfl=httpc_handler
+cfn={httpc_handler,handle_response,1}
+calls=1 1
+1 1002
+cfl=httpc_handler
+cfn={httpc_handler,handle_http_body,2}
+calls=1 1
+1 172
+cfl=httpc_handler
+cfn={httpc_handler,stream,3}
+calls=1 1
+1 4
+cfl=httpc_handler
+cfn={httpc_handler,start_stream,3}
+calls=1 1
+1 3
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=2 1
+1 2
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=2 1
+1 2
+fl=httpc_handler
+fn={httpc_handler,handle_response,1}
+1 8
+cfl=httpc_response
+cfn={httpc_response,result,2}
+calls=1 1
+1 515
+cfl=httpc_handler
+cfn={httpc_handler,handle_queue,2}
+calls=1 1
+1 362
+cfl=httpc_handler
+cfn={httpc_handler,maybe_send_answer,3}
+calls=1 1
+1 111
+cfl=httpc_handler
+cfn={httpc_handler,end_stream,2}
+calls=1 1
+1 4
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=2 1
+1 2
+cfl=httpc_handler
+cfn={httpc_handler,handle_cookies,4}
+calls=1 1
+1 1
+fl=lists
+fn={lists,foldl,3}
+1 289
+cfl=http_request
+cfn={http_request,'-http_headers/1-fun-0-',3}
+calls=38 1
+1 371
+cfl=http_response
+cfn={http_response,'-header_list/1-fun-0-',3}
+calls=28 1
+1 297
+cfl=httpc_response
+cfn={httpc_response,'-parse_headers/6-fun-0-',2}
+calls=8 1
+1 8
+cfl=lists
+cfn={lists,foldl,3}
+calls=74 1
+1 0
+fl=string
+fn={string,strip,1}
+1 16
+cfl=string
+cfn={string,strip,2}
+calls=16 1
+1 888
+fl=string
+fn={string,strip,2}
+1 147
+cfl=string
+cfn={string,strip_right,2}
+calls=16 1
+1 717
+cfl=string
+cfn={string,strip_left,2}
+calls=16 1
+1 24
+fl=httpc_handler
+fn={httpc_handler,handle_call,3}
+1 37
+cfl=httpc_request
+cfn={httpc_request,send,3}
+calls=1 1
+1 698
+cfl=httpc_handler
+cfn={httpc_handler,insert_session,2}
+calls=1 1
+1 15
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=3 1
+1 3
+cfl=httpc_handler
+cfn={httpc_handler,init_wait_for_response_state,2}
+calls=1 1
+1 3
+cfl=httpc_handler
+cfn={httpc_handler,cancel_timer,2}
+calls=1 1
+1 3
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=3 1
+1 3
+cfl=httpc_request
+cfn={httpc_request,is_client_closing,1}
+calls=1 1
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,handle_proxy,2}
+calls=1 1
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,activate_request_timeout,1}
+calls=1 1
+1 1
+fl=string
+fn={string,strip_right,2}
+1 708
+cfl=pseudo
+cfn=garbage_collect
+calls=1 1
+1 9
+cfl=string
+cfn={string,strip_right,2}
+calls=272 1
+1 0
+fl=httpc_request
+fn={httpc_request,send,3}
+1 1
+cfl=httpc_request
+cfn={httpc_request,send,4}
+calls=1 1
+1 697
+fl=httpc_request
+fn={httpc_request,send,4}
+1 9
+cfl=http_request
+cfn={http_request,http_headers,1}
+calls=1 1
+1 636
+cfl=httpc_request
+cfn={httpc_request,do_send_body,7}
+calls=1 1
+1 40
+cfl=pseudo
+cfn=garbage_collect
+calls=1 1
+1 8
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+cfl=httpc_request
+cfn={httpc_request,post_data,4}
+calls=1 1
+1 1
+cfl=httpc_request
+cfn={httpc_request,handle_user_info,2}
+calls=1 1
+1 1
+cfl=erlang
+cfn={erlang,'++',2}
+calls=1 1
+1 1
+fl=http_request
+fn={http_request,http_headers,1}
+1 3
+cfl=lists
+cfn={lists,foldl,3}
+calls=1 1
+1 475
+cfl=lists
+cfn={lists,flatten,1}
+calls=1 1
+1 157
+cfl=http_request
+cfn={http_request,headers_other,2}
+calls=1 1
+1 1
+fl=httpc_response
+fn={httpc_response,result,2}
+1 3
+cfl=httpc_response
+cfn={httpc_response,transparent,2}
+calls=1 1
+1 512
+fl=httpc_response
+fn={httpc_response,transparent,2}
+1 2
+cfl=httpc_response
+cfn={httpc_response,format_response,1}
+calls=1 1
+1 510
+fl=httpc_response
+fn={httpc_response,format_response,1}
+1 7
+cfl=http_response
+cfn={http_response,header_list,1}
+calls=1 1
+1 501
+cfl=erlang
+cfn={erlang,list_to_integer,1}
+calls=1 1
+1 2
+fl=http_response
+fn={http_response,header_list,1}
+1 6
+cfl=lists
+cfn={lists,foldl,3}
+calls=1 1
+1 465
+cfl=lists
+cfn={lists,reverse,1}
+calls=1 1
+1 29
+cfl=erlang
+cfn={erlang,'++',2}
+calls=1 1
+1 1
+fl=lists
+fn={lists,splitwith,2}
+1 8
+cfl=lists
+cfn={lists,splitwith,3}
+calls=8 1
+1 464
+fl=lists
+fn={lists,splitwith,3}
+1 284
+cfl=http_response
+cfn={http_response,'-headers/2-fun-0-',1}
+calls=87 1
+1 156
+cfl=lists
+cfn={lists,reverse,1}
+calls=8 1
+1 24
+cfl=lists
+cfn={lists,splitwith,3}
+calls=79 1
+1 0
+fl=httpc_handler
+fn={httpc_handler,activate_once,1}
+1 4
+cfl=http_transport
+cfn={http_transport,setopts,3}
+calls=4 1
+1 411
+fl=http_transport
+fn={http_transport,setopts,3}
+1 54
+cfl=inet
+cfn={inet,setopts,2}
+calls=4 1
+1 350
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=4 1
+1 7
+fl=http_util
+fn={http_util,to_lower,1}
+1 8
+cfl=string
+cfn={string,to_lower,1}
+calls=8 1
+1 383
+fl=string
+fn={string,to_lower,1}
+1 9
+cfl=string
+cfn={string,'-to_lower/1-lc$^0/1-0-',1}
+calls=8 1
+1 374
+fl=string
+fn={string,'-to_lower/1-lc$^0/1-0-',1}
+1 265
+cfl=string
+cfn={string,to_lower_char,1}
+calls=79 1
+1 109
+cfl=string
+cfn={string,'-to_lower/1-lc$^0/1-0-',1}
+calls=79 1
+1 0
+fl=http_request
+fn={http_request,'-http_headers/1-fun-0-',3}
+1 108
+cfl=http_request
+cfn={http_request,key_value_str,2}
+calls=38 1
+1 263
+fl=httpc_handler
+fn={httpc_handler,handle_queue,2}
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,handle_keep_alive_queue,2}
+calls=1 1
+1 361
+fl=httpc_handler
+fn={httpc_handler,handle_keep_alive_queue,2}
+1 80
+cfl=httpc_handler
+cfn={httpc_handler,handle_empty_queue,4}
+calls=1 1
+1 246
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=2 1
+1 34
+cfl=queue
+cfn={queue,out,1}
+calls=1 1
+1 1
+fl=inet
+fn={inet,setopts,2}
+1 15
+cfl=prim_inet
+cfn={prim_inet,setopts,2}
+calls=4 1
+1 322
+cfl=inet
+cfn={inet,'-setopts/2-lc$^0/1-0-',1}
+calls=4 1
+1 13
+fl=httpc_handler
+fn={httpc_handler,next_body_chunk,1}
+1 6
+cfl=httpc_handler
+cfn={httpc_handler,activate_once,1}
+calls=3 1
+1 328
+fl=prim_inet
+fn={prim_inet,setopts,2}
+1 17
+cfl=prim_inet
+cfn={prim_inet,ctl_cmd,3}
+calls=4 1
+1 287
+cfl=prim_inet
+cfn={prim_inet,encode_opt_val,1}
+calls=4 1
+1 18
+fl=http_response
+fn={http_response,'-header_list/1-fun-0-',3}
+1 95
+cfl=http_response
+cfn={http_response,key_value_tuple,2}
+calls=28 1
+1 202
+fl=prim_inet
+fn={prim_inet,ctl_cmd,3}
+1 10
+cfl=erlang
+cfn={erlang,port_control,3}
+calls=4 1
+1 277
+fl=erlang
+fn={erlang,port_control,3}
+1 60
+cfl=erts_internal
+cfn={erts_internal,port_control,3}
+calls=4 1
+1 217
+fl=http_request
+fn={http_request,key_value_str,2}
+1 187
+cfl=erlang
+cfn={erlang,atom_to_list,1}
+calls=38 1
+1 38
+cfl=erlang
+cfn={erlang,'++',2}
+calls=8 1
+1 38
+cfl=http_request
+cfn={http_request,key_value_str,2}
+calls=38 1
+1 0
+fl=httpc_handler
+fn={httpc_handler,handle_empty_queue,4}
+1 85
+cfl=httpc_handler
+cfn={httpc_handler,activate_once,1}
+calls=1 1
+1 87
+cfl=httpc_handler
+cfn={httpc_handler,update_session,4}
+calls=1 1
+1 61
+cfl=httpc_handler
+cfn={httpc_handler,activate_queue_timeout,2}
+calls=1 1
+1 12
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=1 1
+1 1
+fl=erts_internal
+fn={erts_internal,port_control,3}
+1 217
+fl=http_response
+fn={http_response,key_value_tuple,2}
+1 133
+cfl=erlang
+cfn={erlang,atom_to_list,1}
+calls=28 1
+1 69
+cfl=http_response
+cfn={http_response,key_value_tuple,2}
+calls=28 1
+1 0
+fl=lists
+fn={lists,reverse,1}
+1 101
+cfl=lists
+cfn={lists,reverse,2}
+calls=20 1
+1 71
+fl=httpc_handler
+fn={httpc_handler,handle_http_body,2}
+1 59
+cfl=httpc_handler
+cfn={httpc_handler,next_body_chunk,1}
+calls=1 1
+1 107
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=2 1
+1 2
+cfl=httpc_response
+cfn={httpc_response,whole_body,2}
+calls=1 1
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,case_insensitive_header,1}
+calls=1 1
+1 1
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=1 1
+1 1
+cfl=erlang
+cfn={erlang,list_to_integer,1}
+calls=1 1
+1 1
+fl=lists
+fn={lists,flatten,1}
+1 1
+cfl=lists
+cfn={lists,do_flatten,2}
+calls=1 1
+1 156
+fl=lists
+fn={lists,do_flatten,2}
+1 156
+cfl=lists
+cfn={lists,do_flatten,2}
+calls=80 1
+1 0
+fl=http_response
+fn={http_response,'-headers/2-fun-0-',1}
+1 156
+fl=httpc_handler
+fn={httpc_handler,maybe_send_answer,3}
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,answer_request,3}
+calls=1 1
+1 110
+fl=httpc_handler
+fn={httpc_handler,answer_request,3}
+1 45
+cfl=httpc_response
+cfn={httpc_response,send,2}
+calls=1 1
+1 42
+cfl=httpc_manager
+cfn={httpc_manager,request_done,2}
+calls=1 1
+1 15
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=3 1
+1 3
+cfl=proplists
+cfn={proplists,get_value,3}
+calls=1 1
+1 1
+cfl=lists
+cfn={lists,delete,2}
+calls=1 1
+1 1
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,maybe_make_session_available,2}
+calls=1 1
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,cancel_timer,2}
+calls=1 1
+1 1
+fl=erlang
+fn={erlang,atom_to_list,1}
+1 110
+fl=string
+fn={string,to_lower_char,1}
+1 109
+fl=inets_trace
+fn={inets_trace,report_event,4}
+1 85
+fl=lists
+fn={lists,reverse,2}
+1 71
+fl=httpc_handler
+fn={httpc_handler,update_session,4}
+1 38
+cfl=httpc_manager
+cfn={httpc_manager,update_session,4}
+calls=1 1
+1 23
+fl=httpc_response
+fn={httpc_response,send,2}
+1 42
+fl=erlang
+fn={erlang,'++',2}
+1 42
+fl=httpc_request
+fn={httpc_request,do_send_body,7}
+1 6
+cfl=httpc_request
+cfn={httpc_request,method,1}
+calls=1 1
+1 18
+cfl=http_transport
+cfn={http_transport,send,3}
+calls=1 1
+1 12
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=2 1
+1 2
+cfl=httpc_request
+cfn={httpc_request,version,1}
+calls=1 1
+1 1
+cfl=httpc_request
+cfn={httpc_request,headers,2}
+calls=1 1
+1 1
+fl=pseudo
+fn=garbage_collect
+1 29
+fl=string
+fn={string,strip_left,2}
+1 24
+cfl=string
+cfn={string,strip_left,2}
+calls=8 1
+1 0
+fl=http_response
+fn={http_response,headers,3}
+1 16
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=8 1
+1 8
+fl=httpc_manager
+fn={httpc_manager,update_session,4}
+1 5
+cfl=httpc_manager
+cfn={httpc_manager,session_db_name,1}
+calls=1 1
+1 12
+cfl=ets
+cfn={ets,update_element,3}
+calls=1 1
+1 5
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+fl=erlang
+fn={erlang,setelement,3}
+1 22
+fl=httpc_manager
+fn={httpc_manager,session_db_name,1}
+1 2
+cfl=httpc_manager
+cfn={httpc_manager,make_db_name,2}
+calls=2 1
+1 18
+fl=prim_inet
+fn={prim_inet,encode_opt_val,1}
+1 10
+cfl=prim_inet
+cfn={prim_inet,enc_opt_val,2}
+calls=4 1
+1 8
+fl=httpc_request
+fn={httpc_request,method,1}
+1 2
+cfl=http_util
+cfn={http_util,to_upper,1}
+calls=1 1
+1 15
+cfl=erlang
+cfn={erlang,atom_to_list,1}
+calls=1 1
+1 1
+fl=httpc_manager
+fn={httpc_manager,make_db_name,2}
+1 9
+cfl=erlang
+cfn={erlang,list_to_atom,1}
+calls=2 1
+1 5
+cfl=erlang
+cfn={erlang,atom_to_list,1}
+calls=2 1
+1 2
+cfl=erlang
+cfn={erlang,'++',2}
+calls=2 1
+1 2
+fl=httpc_manager
+fn={httpc_manager,request_done,2}
+1 2
+cfl=httpc_manager
+cfn={httpc_manager,cast,2}
+calls=1 1
+1 13
+fl=httpc_handler
+fn={httpc_handler,insert_session,2}
+1 1
+cfl=httpc_manager
+cfn={httpc_manager,insert_session,2}
+calls=1 1
+1 14
+fl=http_util
+fn={http_util,to_upper,1}
+1 1
+cfl=string
+cfn={string,to_upper,1}
+calls=1 1
+1 14
+fl=string
+fn={string,to_upper,1}
+1 1
+cfl=string
+cfn={string,'-to_upper/1-lc$^0/1-0-',1}
+calls=1 1
+1 13
+fl=httpc_manager
+fn={httpc_manager,insert_session,2}
+1 4
+cfl=httpc_manager
+cfn={httpc_manager,session_db_name,1}
+calls=1 1
+1 8
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+cfl=ets
+cfn={ets,insert,2}
+calls=1 1
+1 1
+fl=string
+fn={string,'-to_upper/1-lc$^0/1-0-',1}
+1 10
+cfl=string
+cfn={string,to_upper_char,1}
+calls=3 1
+1 3
+cfl=string
+cfn={string,'-to_upper/1-lc$^0/1-0-',1}
+calls=3 1
+1 0
+fl=inet
+fn={inet,'-setopts/2-lc$^0/1-0-',1}
+1 13
+cfl=inet
+cfn={inet,'-setopts/2-lc$^0/1-0-',1}
+calls=4 1
+1 0
+fl=httpc_response
+fn={httpc_response,whole_body,1}
+1 10
+cfl=httpc_response
+cfn={httpc_response,whole_body,2}
+calls=3 1
+1 3
+fl=httpc_manager
+fn={httpc_manager,cast,2}
+1 1
+cfl=gen_server
+cfn={gen_server,cast,2}
+calls=1 1
+1 12
+fl=httpc_handler
+fn={httpc_handler,activate_queue_timeout,2}
+1 7
+cfl=erlang
+cfn={erlang,send_after,3}
+calls=1 1
+1 4
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=1 1
+1 1
+fl=http_transport
+fn={http_transport,send,3}
+1 1
+cfl=gen_tcp
+cfn={gen_tcp,send,2}
+calls=1 1
+1 11
+fl=gen_server
+fn={gen_server,cast,2}
+1 1
+cfl=gen_server
+cfn={gen_server,do_cast,2}
+calls=1 1
+1 11
+fl=gen_tcp
+fn={gen_tcp,send,2}
+1 2
+cfl=inet_tcp
+cfn={inet_tcp,send,2}
+calls=1 1
+1 6
+cfl=inet_db
+cfn={inet_db,lookup_socket,1}
+calls=1 1
+1 3
+fl=gen_server
+fn={gen_server,do_cast,2}
+1 3
+cfl=gen_server
+cfn={gen_server,do_send,2}
+calls=1 1
+1 7
+cfl=gen_server
+cfn={gen_server,cast_msg,1}
+calls=1 1
+1 1
+fl=httpc_handler
+fn={httpc_handler,stream,3}
+1 6
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=3 1
+1 4
+fl=prim_inet
+fn={prim_inet,enc_opt_val,2}
+1 8
+cfl=prim_inet
+cfn={prim_inet,enc_opt_val,2}
+calls=4 1
+1 0
+fl=httpc_response
+fn={httpc_response,'-parse_headers/6-fun-0-',2}
+1 8
+fl=gen_server
+fn={gen_server,do_send,2}
+1 3
+cfl=erlang
+cfn={erlang,send,3}
+calls=1 1
+1 4
+fl=inet_tcp
+fn={inet_tcp,send,2}
+1 1
+cfl=prim_inet
+cfn={prim_inet,send,3}
+calls=1 1
+1 5
+fl=prim_inet
+fn={prim_inet,send,3}
+1 2
+cfl=erlang
+cfn={erlang,port_command,3}
+calls=1 1
+1 3
+fl=ets
+fn={ets,update_element,3}
+1 5
+fl=erlang
+fn={erlang,list_to_integer,1}
+1 5
+fl=erlang
+fn={erlang,list_to_atom,1}
+1 5
+fl=httpc_response
+fn={httpc_response,whole_body,2}
+1 4
+fl=httpc_handler
+fn={httpc_handler,end_stream,2}
+1 3
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+fl=httpc_handler
+fn={httpc_handler,cancel_timer,2}
+1 3
+cfl=erlang
+cfn={erlang,cancel_timer,1}
+calls=1 1
+1 1
+fl=erlang
+fn={erlang,send_after,3}
+1 4
+fl=erlang
+fn={erlang,send,3}
+1 4
+fl=string
+fn={string,to_upper_char,1}
+1 3
+fl=inet_db
+fn={inet_db,lookup_socket,1}
+1 2
+cfl=erlang
+cfn={erlang,port_get_data,1}
+calls=1 1
+1 1
+fl=httpc_handler
+fn={httpc_handler,start_stream,3}
+1 2
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+fl=httpc_handler
+fn={httpc_handler,init_wait_for_response_state,2}
+1 2
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=1 1
+1 1
+fl=erlang
+fn={erlang,port_command,3}
+1 2
+cfl=erts_internal
+cfn={erts_internal,port_command,3}
+calls=1 1
+1 1
+fl=queue
+fn={queue,out,1}
+1 1
+fl=proplists
+fn={proplists,get_value,3}
+1 1
+fl=lists
+fn={lists,delete,2}
+1 1
+fl=httpc_request
+fn={httpc_request,version,1}
+1 1
+fl=httpc_request
+fn={httpc_request,post_data,4}
+1 1
+fl=httpc_request
+fn={httpc_request,is_client_closing,1}
+1 1
+fl=httpc_request
+fn={httpc_request,headers,2}
+1 1
+fl=httpc_request
+fn={httpc_request,handle_user_info,2}
+1 1
+fl=httpc_handler
+fn={httpc_handler,maybe_make_session_available,2}
+1 1
+fl=httpc_handler
+fn={httpc_handler,handle_proxy,2}
+1 1
+fl=httpc_handler
+fn={httpc_handler,handle_cookies,4}
+1 1
+fl=httpc_handler
+fn={httpc_handler,case_insensitive_header,1}
+1 1
+fl=httpc_handler
+fn={httpc_handler,activate_request_timeout,1}
+1 1
+fl=http_request
+fn={http_request,headers_other,2}
+1 1
+fl=gen_server
+fn={gen_server,reply,2}
+1 1
+fl=gen_server
+fn={gen_server,cast_msg,1}
+1 1
+fl=ets
+fn={ets,insert,2}
+1 1
+fl=erts_internal
+fn={erts_internal,port_command,3}
+1 1
+fl=erlang
+fn={erlang,port_get_data,1}
+1 1
+fl=erlang
+fn={erlang,list_to_tuple,1}
+1 1
+fl=erlang
+fn={erlang,cancel_timer,1}
+1 1
+fl=pseudo
+fn=undefined
+1 0
+cfl=proc_lib
+cfn={proc_lib,init_p_do_apply,3}
+calls=0 1
+1 221695
+fl=fprof
+fn={fprof,apply_start_stop,4}
+1 36
+cfl=httpc
+cfn={httpc,request,1}
+calls=1 1
+1 222747
+cfl=fprof
+cfn={fprof,'-apply_start_stop/4-after$^0/0-0-',3}
+calls=1 1
+1 30
+fl=httpc
+fn={httpc,request,1}
+1 3
+cfl=httpc
+cfn={httpc,request,2}
+calls=1 1
+1 222743
+cfl=httpc
+cfn={httpc,default_profile,0}
+calls=1 1
+1 1
+fl=httpc
+fn={httpc,request,2}
+1 1
+cfl=httpc
+cfn={httpc,request,5}
+calls=1 1
+1 222742
+fl=httpc
+fn={httpc,request,5}
+1 4
+cfl=httpc
+cfn={httpc,handle_request,9}
+calls=1 1
+1 222281
+cfl=httpc
+cfn={httpc,uri_parse,2}
+calls=1 1
+1 455
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+cfl=httpc
+cfn={httpc,header_parse,1}
+calls=1 1
+1 1
+fl=httpc
+fn={httpc,handle_request,9}
+1 147
+cfl=httpc
+cfn={httpc,handle_answer,3}
+calls=1 1
+1 220794
+cfl=httpc_manager
+cfn={httpc_manager,request,2}
+calls=1 1
+1 1072
+cfl=httpc
+cfn={httpc,http_options,1}
+calls=1 1
+1 104
+cfl=httpc
+cfn={httpc,request_options,1}
+calls=1 1
+1 84
+cfl=proplists
+cfn={proplists,get_value,2}
+calls=5 1
+1 29
+cfl=httpc
+cfn={httpc,header_host,3}
+calls=1 1
+1 26
+cfl=httpc
+cfn={httpc,header_record,3}
+calls=1 1
+1 9
+cfl=httpc
+cfn={httpc,headers_as_is,2}
+calls=1 1
+1 7
+cfl=httpc
+cfn={httpc,maybe_encode_uri,2}
+calls=3 1
+1 3
+cfl=http_util
+cfn={http_util,timestamp,0}
+calls=1 1
+1 3
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+cfl=httpc
+cfn={httpc,profile_name,1}
+calls=1 1
+1 1
+cfl=httpc
+cfn={httpc,'-handle_request/9-lc$^0/1-0-',1}
+calls=1 1
+1 1
+fl=pseudo
+fn=suspend
+1 221551
+fl=httpc
+fn={httpc,handle_answer,3}
+1 18
+cfl=pseudo
+cfn=suspend
+calls=1 1
+1 220506
+cfl=httpc
+cfn={httpc,return_answer,2}
+calls=1 1
+1 268
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 2
+fl=httpc_manager
+fn={httpc_manager,request,2}
+1 1
+cfl=httpc_manager
+cfn={httpc_manager,call,2}
+calls=1 1
+1 1071
+fl=httpc_manager
+fn={httpc_manager,call,2}
+1 1
+cfl=httpc_manager
+cfn={httpc_manager,call,3}
+calls=1 1
+1 1070
+fl=httpc_manager
+fn={httpc_manager,call,3}
+1 1
+cfl=gen_server
+cfn={gen_server,call,3}
+calls=1 1
+1 1069
+fl=gen_server
+fn={gen_server,call,3}
+1 2
+cfl=gen
+cfn={gen,call,4}
+calls=1 1
+1 1067
+fl=gen
+fn={gen,call,4}
+1 2
+cfl=gen
+cfn={gen,do_call,4}
+calls=1 1
+1 1064
+cfl=erlang
+cfn={erlang,whereis,1}
+calls=1 1
+1 1
+fl=gen
+fn={gen,do_call,4}
+1 6
+cfl=pseudo
+cfn=suspend
+calls=1 1
+1 1045
+cfl=erlang
+cfn={erlang,send,3}
+calls=1 1
+1 11
+cfl=erlang
+cfn={erlang,monitor,2}
+calls=1 1
+1 1
+cfl=erlang
+cfn={erlang,demonitor,2}
+calls=1 1
+1 1
+fl=httpc
+fn={httpc,uri_parse,2}
+1 2
+cfl=http_uri
+cfn={http_uri,parse,2}
+calls=1 1
+1 452
+cfl=httpc
+cfn={httpc,scheme_defaults,0}
+calls=1 1
+1 1
+fl=http_uri
+fn={http_uri,parse,2}
+1 3
+cfl=http_uri
+cfn={http_uri,parse_uri_rest,4}
+calls=1 1
+1 326
+cfl=http_uri
+cfn={http_uri,parse_scheme,2}
+calls=1 1
+1 123
+fl=http_uri
+fn={http_uri,split_uri,5}
+1 14
+cfl=inets_regexp
+cfn={inets_regexp,first_match,2}
+calls=6 1
+1 340
+cfl=string
+cfn={string,substr,3}
+calls=2 1
+1 51
+fl=inets_regexp
+fn={inets_regexp,first_match,2}
+1 24
+cfl=inets_regexp
+cfn={inets_regexp,first_match,3}
+calls=6 1
+1 234
+cfl=inets_regexp
+cfn={inets_regexp,parse,1}
+calls=6 1
+1 82
+cfl=inets_regexp
+cfn={inets_regexp,first_match,2}
+calls=6 1
+1 0
+fl=http_uri
+fn={http_uri,parse_uri_rest,4}
+1 6
+cfl=http_uri
+cfn={http_uri,split_uri,5}
+calls=3 1
+1 218
+cfl=http_uri
+cfn={http_uri,parse_host_port,4}
+calls=1 1
+1 76
+cfl=http_uri
+cfn={http_uri,parse_path_query,1}
+calls=1 1
+1 26
+fl=httpc
+fn={httpc,return_answer,2}
+1 33
+cfl=httpc
+cfn={httpc,maybe_format_body,2}
+calls=1 1
+1 230
+cfl=proplists
+cfn={proplists,get_value,3}
+calls=1 1
+1 5
+fl=inets_regexp
+fn={inets_regexp,first_match,3}
+1 119
+cfl=inets_regexp
+cfn={inets_regexp,re_apply,3}
+calls=57 1
+1 115
+cfl=inets_regexp
+cfn={inets_regexp,first_match,3}
+calls=56 1
+1 0
+fl=httpc
+fn={httpc,maybe_format_body,2}
+1 58
+cfl=pseudo
+cfn=garbage_collect
+calls=1 1
+1 126
+cfl=erlang
+cfn={erlang,binary_to_list,1}
+calls=1 1
+1 38
+cfl=proplists
+cfn={proplists,get_value,3}
+calls=1 1
+1 8
+fl=pseudo
+fn=garbage_collect
+1 126
+fl=http_uri
+fn={http_uri,parse_scheme,2}
+1 6
+cfl=http_uri
+cfn={http_uri,split_uri,5}
+calls=1 1
+1 93
+cfl=http_util
+cfn={http_util,to_lower,1}
+calls=1 1
+1 19
+cfl=http_uri
+cfn={http_uri,which_scheme_defaults,1}
+calls=1 1
+1 3
+cfl=lists
+cfn={lists,keysearch,3}
+calls=1 1
+1 1
+cfl=erlang
+cfn={erlang,list_to_atom,1}
+calls=1 1
+1 1
+fl=inets_regexp
+fn={inets_regexp,re_apply,3}
+1 57
+cfl=inets_regexp
+cfn={inets_regexp,re_apply,4}
+calls=57 1
+1 58
+fl=httpc
+fn={httpc,http_options,1}
+1 2
+cfl=httpc
+cfn={httpc,http_options,3}
+calls=1 1
+1 95
+cfl=httpc
+cfn={httpc,http_options_default,0}
+calls=1 1
+1 7
+fl=httpc
+fn={httpc,http_options,3}
+1 56
+cfl=lists
+cfn={lists,keysearch,3}
+calls=8 1
+1 30
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=8 1
+1 9
+cfl=httpc
+cfn={httpc,http_options,3}
+calls=8 1
+1 0
+fl=httpc
+fn={httpc,request_options,1}
+1 2
+cfl=httpc
+cfn={httpc,request_options,3}
+calls=1 1
+1 79
+cfl=httpc
+cfn={httpc,request_options_defaults,0}
+calls=1 1
+1 3
+fl=inets_regexp
+fn={inets_regexp,parse,1}
+1 12
+cfl=inets_regexp
+cfn={inets_regexp,reg,1}
+calls=6 1
+1 70
+fl=httpc
+fn={httpc,request_options,3}
+1 19
+cfl=httpc
+cfn={httpc,request_options_sanity_check,1}
+calls=1 1
+1 38
+cfl=lists
+cfn={lists,keysearch,3}
+calls=8 1
+1 19
+cfl=lists
+cfn={lists,reverse,1}
+calls=1 1
+1 3
+cfl=httpc
+cfn={httpc,request_options,3}
+calls=8 1
+1 0
+fl=http_uri
+fn={http_uri,parse_host_port,4}
+1 3
+cfl=http_uri
+cfn={http_uri,split_uri,5}
+calls=1 1
+1 72
+cfl=http_uri
+cfn={http_uri,int_port,1}
+calls=1 1
+1 1
+fl=proplists
+fn={proplists,get_value,3}
+1 73
+cfl=proplists
+cfn={proplists,get_value,3}
+calls=43 1
+1 0
+fl=inets_regexp
+fn={inets_regexp,reg,1}
+1 6
+cfl=inets_regexp
+cfn={inets_regexp,reg1,1}
+calls=6 1
+1 64
+fl=inets_regexp
+fn={inets_regexp,reg1,1}
+1 12
+cfl=inets_regexp
+cfn={inets_regexp,reg2,1}
+calls=6 1
+1 46
+cfl=inets_regexp
+cfn={inets_regexp,reg1p,2}
+calls=6 1
+1 6
+fl=proplists
+fn={proplists,get_value,2}
+1 8
+cfl=proplists
+cfn={proplists,get_value,3}
+calls=8 1
+1 55
+fl=inets_regexp
+fn={inets_regexp,re_apply,4}
+1 57
+cfl=inets_regexp
+cfn={inets_regexp,re_apply_more,3}
+calls=1 1
+1 1
+fl=string
+fn={string,substr,3}
+1 4
+cfl=string
+cfn={string,substr1,2}
+calls=2 1
+1 40
+cfl=string
+cfn={string,substr2,2}
+calls=2 1
+1 7
+fl=lists
+fn={lists,keysearch,3}
+1 51
+fl=inets_regexp
+fn={inets_regexp,reg2,1}
+1 12
+cfl=inets_regexp
+cfn={inets_regexp,reg3,1}
+calls=6 1
+1 28
+cfl=inets_regexp
+cfn={inets_regexp,reg2p,2}
+calls=6 1
+1 6
+fl=string
+fn={string,substr1,2}
+1 40
+cfl=string
+cfn={string,substr1,2}
+calls=19 1
+1 0
+fl=httpc
+fn={httpc,request_options_sanity_check,1}
+1 4
+cfl=proplists
+cfn={proplists,get_value,2}
+calls=3 1
+1 34
+fl=erlang
+fn={erlang,binary_to_list,1}
+1 38
+fl=fprof
+fn={fprof,'-apply_start_stop/4-after$^0/0-0-',3}
+1 30
+cfl=pseudo
+cfn=suspend
+calls=1 1
+1 0
+fl=inets_regexp
+fn={inets_regexp,reg3,1}
+1 12
+cfl=inets_regexp
+cfn={inets_regexp,reg4,1}
+calls=6 1
+1 10
+cfl=inets_regexp
+cfn={inets_regexp,reg3p,2}
+calls=6 1
+1 6
+fl=httpc
+fn={httpc,header_host,3}
+1 26
+fl=http_uri
+fn={http_uri,parse_path_query,1}
+1 3
+cfl=http_uri
+cfn={http_uri,split_uri,5}
+calls=1 1
+1 22
+cfl=http_uri
+cfn={http_uri,path,1}
+calls=1 1
+1 1
+fl=http_util
+fn={http_util,to_lower,1}
+1 1
+cfl=string
+cfn={string,to_lower,1}
+calls=1 1
+1 18
+fl=string
+fn={string,to_lower,1}
+1 1
+cfl=string
+cfn={string,'-to_lower/1-lc$^0/1-0-',1}
+calls=1 1
+1 17
+fl=string
+fn={string,'-to_lower/1-lc$^0/1-0-',1}
+1 13
+cfl=string
+cfn={string,to_lower_char,1}
+calls=4 1
+1 4
+cfl=string
+cfn={string,'-to_lower/1-lc$^0/1-0-',1}
+calls=4 1
+1 0
+fl=erlang
+fn={erlang,setelement,3}
+1 11
+fl=erlang
+fn={erlang,send,3}
+1 11
+fl=inets_regexp
+fn={inets_regexp,reg4,1}
+1 8
+cfl=inets_regexp
+cfn={inets_regexp,escape_char,1}
+calls=2 1
+1 2
+fl=httpc
+fn={httpc,header_record,3}
+1 1
+cfl=httpc
+cfn={httpc,header_record,4}
+calls=1 1
+1 8
+fl=httpc
+fn={httpc,header_record,4}
+1 1
+cfl=httpc
+cfn={httpc,validate_headers,3}
+calls=1 1
+1 7
+fl=string
+fn={string,substr2,2}
+1 7
+cfl=string
+cfn={string,substr2,2}
+calls=5 1
+1 0
+fl=httpc
+fn={httpc,validate_headers,3}
+1 5
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=2 1
+1 2
+cfl=httpc
+cfn={httpc,validate_headers,3}
+calls=2 1
+1 0
+fl=httpc
+fn={httpc,http_options_default,0}
+1 4
+cfl=httpc
+cfn={httpc,boolfun,0}
+calls=3 1
+1 3
+fl=httpc
+fn={httpc,headers_as_is,2}
+1 2
+cfl=proplists
+cfn={proplists,get_value,3}
+calls=1 1
+1 5
+fl=inets_regexp
+fn={inets_regexp,reg3p,2}
+1 6
+fl=inets_regexp
+fn={inets_regexp,reg2p,2}
+1 6
+fl=inets_regexp
+fn={inets_regexp,reg1p,2}
+1 6
+fl=string
+fn={string,to_lower_char,1}
+1 4
+fl=inets_trace
+fn={inets_trace,report_event,4}
+1 4
+fl=httpc
+fn={httpc,boolfun,0}
+1 4
+fl=lists
+fn={lists,reverse,1}
+1 2
+cfl=lists
+cfn={lists,reverse,2}
+calls=1 1
+1 1
+fl=httpc
+fn={httpc,request_options_defaults,0}
+1 2
+cfl=httpc
+cfn={httpc,boolfun,0}
+calls=1 1
+1 1
+fl=httpc
+fn={httpc,maybe_encode_uri,2}
+1 3
+fl=http_util
+fn={http_util,timestamp,0}
+1 2
+cfl=os
+cfn={os,timestamp,0}
+calls=1 1
+1 1
+fl=http_uri
+fn={http_uri,which_scheme_defaults,1}
+1 2
+cfl=lists
+cfn={lists,keysearch,3}
+calls=1 1
+1 1
+fl=inets_regexp
+fn={inets_regexp,escape_char,1}
+1 2
+fl=os
+fn={os,timestamp,0}
+1 1
+fl=lists
+fn={lists,reverse,2}
+1 1
+fl=inets_regexp
+fn={inets_regexp,re_apply_more,3}
+1 1
+fl=httpc
+fn={httpc,scheme_defaults,0}
+1 1
+fl=httpc
+fn={httpc,profile_name,1}
+1 1
+fl=httpc
+fn={httpc,header_parse,1}
+1 1
+fl=httpc
+fn={httpc,default_profile,0}
+1 1
+fl=httpc
+fn={httpc,'-handle_request/9-lc$^0/1-0-',1}
+1 1
+fl=http_uri
+fn={http_uri,path,1}
+1 1
+fl=http_uri
+fn={http_uri,int_port,1}
+1 1
+fl=erlang
+fn={erlang,whereis,1}
+1 1
+fl=erlang
+fn={erlang,monitor,2}
+1 1
+fl=erlang
+fn={erlang,list_to_atom,1}
+1 1
+fl=erlang
+fn={erlang,demonitor,2}
+1 1
+fl=pseudo
+fn=undefined
+1 0
+cfl=fprof
+cfn={fprof,apply_start_stop,4}
+calls=0 1
+1 222813
+fl=gen_server
+fn={gen_server,loop,6}
+1 11
+cfl=gen_server
+cfn={gen_server,decode_msg,8}
+calls=2 1
+1 221835
+cfl=pseudo
+cfn=suspend
+calls=2 1
+1 220790
+cfl=pseudo
+cfn=garbage_collect
+calls=1 1
+1 30
+fl=proc_lib
+fn={proc_lib,init_p_do_apply,3}
+1 0
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=0 1
+1 221837
+fl=gen_server
+fn={gen_server,decode_msg,8}
+1 2
+cfl=gen_server
+cfn={gen_server,handle_msg,5}
+calls=2 1
+1 221834
+fl=gen_server
+fn={gen_server,handle_msg,5}
+1 10
+cfl=httpc_manager
+cfn={httpc_manager,handle_call,3}
+calls=1 1
+1 991
+cfl=gen_server
+cfn={gen_server,dispatch,3}
+calls=1 1
+1 36
+cfl=gen_server
+cfn={gen_server,handle_common_reply,6}
+calls=1 1
+1 18
+cfl=gen_server
+cfn={gen_server,reply,2}
+calls=1 1
+1 2
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=1 1
+1 0
+fl=pseudo
+fn=suspend
+1 221584
+fl=httpc_manager
+fn={httpc_manager,handle_call,3}
+1 4
+cfl=httpc_manager
+cfn={httpc_manager,handle_request,2}
+calls=1 1
+1 986
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+fl=httpc_manager
+fn={httpc_manager,handle_request,2}
+1 42
+cfl=httpc_manager
+cfn={httpc_manager,pipeline_or_keep_alive,3}
+calls=1 1
+1 887
+cfl=httpc_manager
+cfn={httpc_manager,select_session,5}
+calls=1 1
+1 28
+cfl=httpc_manager
+cfn={httpc_manager,handle_cookies,2}
+calls=1 1
+1 23
+cfl=httpc_manager
+cfn={httpc_manager,generate_request_id,1}
+calls=1 1
+1 5
+cfl=httpc_manager
+cfn={httpc_manager,session_type,1}
+calls=1 1
+1 1
+fl=httpc_manager
+fn={httpc_manager,pipeline_or_keep_alive,3}
+1 18
+cfl=httpc_handler
+cfn={httpc_handler,send,2}
+calls=1 1
+1 867
+cfl=ets
+cfn={ets,insert,2}
+calls=1 1
+1 2
+fl=httpc_handler
+fn={httpc_handler,send,2}
+1 1
+cfl=httpc_handler
+cfn={httpc_handler,call,3}
+calls=1 1
+1 866
+fl=httpc_handler
+fn={httpc_handler,call,3}
+1 1
+cfl=gen_server
+cfn={gen_server,call,3}
+calls=1 1
+1 865
+fl=gen_server
+fn={gen_server,call,3}
+1 2
+cfl=gen
+cfn={gen,call,4}
+calls=1 1
+1 863
+fl=gen
+fn={gen,call,4}
+1 1
+cfl=gen
+cfn={gen,do_call,4}
+calls=1 1
+1 862
+fl=gen
+fn={gen,do_call,4}
+1 37
+cfl=pseudo
+cfn=suspend
+calls=1 1
+1 794
+cfl=erlang
+cfn={erlang,send,3}
+calls=1 1
+1 26
+cfl=erlang
+cfn={erlang,demonitor,2}
+calls=1 1
+1 4
+cfl=erlang
+cfn={erlang,monitor,2}
+calls=1 1
+1 1
+fl=gen_server
+fn={gen_server,dispatch,3}
+1 1
+cfl=httpc_manager
+cfn={httpc_manager,handle_cast,2}
+calls=1 1
+1 35
+fl=httpc_manager
+fn={httpc_manager,handle_cast,2}
+1 9
+cfl=ets
+cfn={ets,delete,2}
+calls=1 1
+1 25
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+fl=pseudo
+fn=garbage_collect
+1 30
+fl=httpc_manager
+fn={httpc_manager,select_session,5}
+1 5
+cfl=httpc_manager
+cfn={httpc_manager,select_session,4}
+calls=1 1
+1 11
+cfl=ets
+cfn={ets,match,2}
+calls=1 1
+1 9
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=2 1
+1 2
+cfl=httpc_request
+cfn={httpc_request,is_idempotent,1}
+calls=1 1
+1 1
+fl=erlang
+fn={erlang,send,3}
+1 26
+fl=ets
+fn={ets,delete,2}
+1 25
+fl=httpc_manager
+fn={httpc_manager,handle_cookies,2}
+1 23
+fl=gen_server
+fn={gen_server,handle_common_reply,6}
+1 1
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=1 1
+1 0
+fl=httpc_manager
+fn={httpc_manager,select_session,4}
+1 1
+cfl=httpc_manager
+cfn={httpc_manager,select_session,2}
+calls=1 1
+1 10
+fl=httpc_manager
+fn={httpc_manager,select_session,2}
+1 4
+cfl=httpc_manager
+cfn={httpc_manager,'-select_session/2-lc$^0/1-0-',2}
+calls=1 1
+1 4
+cfl=lists
+cfn={lists,keysort,2}
+calls=1 1
+1 1
+cfl=inets_trace
+cfn={inets_trace,report_event,4}
+calls=1 1
+1 1
+fl=ets
+fn={ets,match,2}
+1 9
+fl=inets_trace
+fn={inets_trace,report_event,4}
+1 5
+fl=httpc_manager
+fn={httpc_manager,generate_request_id,1}
+1 3
+cfl=erlang
+cfn={erlang,setelement,3}
+calls=1 1
+1 1
+cfl=erlang
+cfn={erlang,make_ref,0}
+calls=1 1
+1 1
+fl=httpc_manager
+fn={httpc_manager,'-select_session/2-lc$^0/1-0-',2}
+1 4
+cfl=httpc_manager
+cfn={httpc_manager,'-select_session/2-lc$^0/1-0-',2}
+calls=1 1
+1 0
+fl=erlang
+fn={erlang,demonitor,2}
+1 4
+fl=gen_server
+fn={gen_server,reply,2}
+1 2
+fl=ets
+fn={ets,insert,2}
+1 2
+fl=lists
+fn={lists,keysort,2}
+1 1
+fl=httpc_request
+fn={httpc_request,is_idempotent,1}
+1 1
+fl=httpc_manager
+fn={httpc_manager,session_type,1}
+1 1
+fl=erlang
+fn={erlang,setelement,3}
+1 1
+fl=erlang
+fn={erlang,monitor,2}
+1 1
+fl=erlang
+fn={erlang,make_ref,0}
+1 1
+fl=pseudo
+fn=undefined
+1 0
+cfl=proc_lib
+cfn={proc_lib,init_p_do_apply,3}
+calls=0 1
+1 221837
+cfl=gen_server
+cfn={gen_server,loop,6}
+calls=0 1
+1 36
