@@ -10,7 +10,7 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    fprofx_sup:start_link().
+    fprofx:start().
 
 stop(_State) ->
     fprofx:stop().

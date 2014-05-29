@@ -1,13 +1,13 @@
 {application, fprofx,
  [
-  {description, "extended fprof"},
-  {vsn, "1"},
+  {description, "fprof extended"},
+  {vsn, "1.0.0"},
   {registered, []},
   {applications, [
                   kernel,
                   stdlib
                  ]},
-  {modules, [fprof]},
+  {modules, [fprofx]},
   {mod, { fprofx_app, []}},
   {env, []}
  ]}.
