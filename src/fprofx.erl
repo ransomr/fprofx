@@ -1576,11 +1576,18 @@ trace_handler({trace_ts, Pid, return_to, {_M, _F, Args} = MFArgs, TS} = Trace,
     trace_return_to(Table, Pid, Func, TS),
     TS;
 %%
-%% spawn
+%% spawn, only needed (and reliable) prior to 19.0
 trace_handler({trace_ts, Pid, spawn, Child, MFArgs, TS} = Trace,
 	      Table, _, Dump) ->
     dump_stack(Dump, get(Pid), Trace),
     trace_spawn(Table, Child, MFArgs, TS, Pid),
+    TS;
+%%
+%% spawned, added in 19.0
+trace_handler({trace_ts, Pid, spawned, Parent, MFArgs, TS} = Trace,
+	      Table, _, Dump) ->
+    dump_stack(Dump, get(Pid), Trace),
+    trace_spawn(Table, Pid, MFArgs, TS, Parent),
     TS;
 %%
 %% exit
@@ -1636,9 +1643,29 @@ trace_handler({trace_ts, Pid, gc_start, _Func, TS} = Trace,
     dump_stack(Dump, get(Pid), Trace),
     trace_gc_start(Table, Pid, TS),
     TS;
+trace_handler({trace_ts, Pid, gc_minor_start, _Func, TS} = Trace,
+	      Table, _, Dump) ->
+    dump_stack(Dump, get(Pid), Trace),
+    trace_gc_start(Table, Pid, TS),
+    TS;
+trace_handler({trace_ts, Pid, gc_major_start, _Func, TS} = Trace,
+	      Table, _, Dump) ->
+    dump_stack(Dump, get(Pid), Trace),
+    trace_gc_start(Table, Pid, TS),
+    TS;
 %%
 %% gc_end
 trace_handler({trace_ts, Pid, gc_end, _Func, TS} = Trace,
+	      Table, _, Dump) ->
+    dump_stack(Dump, get(Pid), Trace),
+    trace_gc_end(Table, Pid, TS),
+    TS;
+trace_handler({trace_ts, Pid, gc_minor_end, _Func, TS} = Trace,
+	      Table, _, Dump) ->
+    dump_stack(Dump, get(Pid), Trace),
+    trace_gc_end(Table, Pid, TS),
+    TS;
+trace_handler({trace_ts, Pid, gc_major_end, _Func, TS} = Trace,
 	      Table, _, Dump) ->
     dump_stack(Dump, get(Pid), Trace),
     trace_gc_end(Table, Pid, TS),
@@ -2023,8 +2050,10 @@ trace_spawn(Table, Pid, MFArgs, TS, Parent) ->
 	    ets:insert(Table, #proc{id = Pid, parent = Parent,
 				    spawned_as = MFArgs});
 	_ ->
-	    throw({inconsistent_trace_data, ?MODULE, ?LINE,
-		  [Pid, MFArgs, TS, Parent, Stack]})
+	    %% In 19.0 we get both a spawn and spawned event,
+	    %% however we do not know the order so we just ignore
+	    %% the second event that comes
+	    ok
     end.
 
 
